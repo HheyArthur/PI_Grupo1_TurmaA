@@ -1,6 +1,30 @@
 
 public class App {
 
+    public static int menu(){
+        int A;
+        do{
+            System.out.println("Título do jogo");
+        Scanner input = new Scanner(System.in);
+        System.out.println("\n  ==================================== ");
+        System.out.println("");
+        System.out.println("                 1 - Jogar ");
+        System.out.println("                 2 - Istruções");
+        System.out.println("                 3 - Sinópolis");
+        System.out.println("                 4 - Créditos ");
+        System.out.println("                 5 - Sair ");
+        System.out.println("\n  ==================================== ");
+        
+       A = input.nextInt();
+            
+        }while(A <= 0 || A >= 6);
+     
+            
+        
+       
+       return A;
+    }
+  
    static void iniciotaverna(String n) {
       System.out.println(
             "\n Um humano simples que após anos trabalhando como ajudante de cozinha, decidiu que iria abrir sua própria taverna "
