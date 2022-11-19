@@ -7,14 +7,7 @@ public class App {
 
 
 
-
-
-
-
-
-
-
-private static String nomejogador; // nao sei mas o nome nao está gravando
+public static String nomejogador;
 
 
 
@@ -42,7 +35,7 @@ public static int menu(){
       return opcaomenu;
     }
 
-    public static int creditos (int opcaomenu) {
+public static int creditos (int opcaomenu) {
       System.out.println(" Teste ");
       menu(); // retorna pro menu 1x
       return opcaomenu;
@@ -50,20 +43,19 @@ public static int menu(){
      
 public static int sinopse (int opcaomenu) {
   System.out.println("Sinopse: \n"
-    + "   Duas história. A taberna e a casa, na taberna você será um jovem que por causa da linha do\n"
-    + "destino encontra um bom homem em sua taberna que irá ajudar em seu sonho empreendedor \n"
-    + "      \n "
-    + "Em A casa, você será um caçador de monstro que irá aceitar mais um contrato, porém um \n"
-    + "homem que parece não saber como parar de falar, irá te guiar nesse serviço estranhamente \n"
-    + "relacionado a administração ") ");
-          
+  + "   Duas história. A taberna e a casa, na taberna você será um jovem que por causa da linha do\n"
+  + "destino encontra um bom homem em sua taberna que irá ajudar em seu sonho empreendedor \n"
+  + "      \n "
+  + "Em A casa, você será um caçador de monstro que irá aceitar mais um contrato, porém um \n"
+  + "homem que parece não saber como parar de falar, irá te guiar nesse serviço estranhamente \n"
+  + "relacionado a administração  ");
   return opcaomenu;
 }
 
 public static int instrucoes (int opcaomenu) {
-  System.out.println("instruçoes:\n"
-    + "Esse jogo é game -rpg com objetivo de abordar assunto de administração.\n"
-    + "Durante a histora terá perguntas relacionada ao tema, o jogador, no caso você tem 3 chances de acertar elas. Bom jogo\n" ");
+  System.out.println("I2nstruçoes:\n"
+  + "Esse jogo é game -rpg com objetivo de abordar assunto de administração.\n"
+  + "Durante a histora terá perguntas relacionada ao tema, o jogador, no caso você tem 3 chances de acertar elas. Bom jogo\n");
   return opcaomenu;
 }
 
@@ -73,7 +65,7 @@ public static void sair (int opcaomenu) {
 
 }
 
-public static int caminhos (int opcaomenu) {
+public static void caminhos (int opcaomenu) {
   int walk;
 
   do{
@@ -86,47 +78,65 @@ public static int caminhos (int opcaomenu) {
   walk = input.nextInt();
 
   } while (walk >= 3 || walk <= 0 ) ;
- 
-return walk;
-  }
+validacoes(walk); // fazer a pergunta com a mesma logica
+}
   
    
 
 
-public static int validacoes (int walk,int opcaomenu, String nomejogador) {
-  if (walk == 1) {
-    taberna0(opcaomenu);
-     taberna1(opcaomenu, nomejogador);
-    // taberna2(opcaomenu, nomejogador );
-    // taberna3(opcaomenu, nomejogador);
-    // taberna4(opcaomenu, nomejogador);
-    // taberna5(opcaomenu, nomejogador);
+ public static void validacoes (int walk) {
+   if (walk == 1){
+    taberna0(walk);
+    taberna1(walk);
+    taberna2(walk);
+    taberna3(walk);
+    taberna4(walk);
+    taberna5(walk);
+   }
+   if (walk == 2) {
+    System.out.println("x");
+    // casa0(walk);
+    // casa1(walk);
+    // casa2(walk);
+    // casa3(walk);
+    // casa4(walk);
+    // casa5(walk);
 
-    return walk;
-  }
-  return opcaomenu;
+
+   } 
+  //  else{ 
+  //   System.out.println("Opção invalida tente novamente ");
+  //  }
 }
 
+// Meio um teste para saber oomo usar array
+
+/* public static String perguntas () {
+  String  alternativas = [{1:""},{B:""}] 
+  alternativas [0]
+} */
 
 
-
-     public static String pedirnome() {   
+     public static void pedirnome() {   
 
 
          System.out.println("Informe seu nome ");
          Scanner input = new Scanner (System.in);
-        String nomejogador = input.next();
-         return nomejogador;
+       nomejogador = input.next();
+         
 
 
      }
 
      
              
-    static void controle (int opcaomenu, String nomejogador,int walk) { // função de controle q irá chama todas as coisas.
+    static void controle (int opcaomenu ,int walk) { // função de controle q irá chama todas as coisas.
       switch (opcaomenu) {
         case 1:
         caminhos(walk);
+        // validacoes(walk);
+
+
        
 break;
         case 2:
@@ -146,7 +156,7 @@ break;
     }
 
 
-   static void taberna0(int opcaomenu) {
+   static void taberna0(int walk) {
       System.out.println(
                   "\n Um humano simples que após anos trabalhando como ajudante de cozinha, decidiu que iria abrir sua própria taberna "
                   + " e então, decidiu estudar meios de abrir seu próprio negócio e como administrar. Anos se passaram "
@@ -220,7 +230,7 @@ break;
    
    //fazer uma função que pergunta o nome do jogador 
    
-      static void taberna1(int opcaomenu, String nomejogador) {
+      static void taberna1(int walk) {
         System.out.println(nomejogador);
 
         System.out.println("Aperte enter para seguir"); 
@@ -258,13 +268,14 @@ break;
                   System.out.println(nomejogador);
 
 
+
  }
 
             
 
     // (((por a quest perguntando oque é teoria da adm)))
    
-      static void taberna2(int opcaomenu, String nomejogador){
+      static void taberna2(int walk){
         System.out.println(nomejogador);
         try{System.in.read();}
         catch(Exception e){}
@@ -285,7 +296,7 @@ break;
     
     //((Perguntar ao jogador qual é o nome dos criadores da adm. clássica e científico))
     
-        static void taberna3(int opcaomenu, String nomejogador){
+        static void taberna3(int walk){
             System.out.println(
                     " Após pegar os livros e ler um pouco você percebe que está quase na hora de ir ver Chimbinha e se arruma para ver seu amigo\n" 
                     +"É uma e vinte da tarde, o movimente esta como sempre esteve, alguns humanos conversando sobre as colheitas, um anão no fundo fumando e alguns orcs fazendo quebra de braça, tudo como sempre foi.\n"
@@ -306,7 +317,7 @@ break;
 
     //((Questão sobre capacitação de funcionário))
     
-    static void taberna4(int opcaomenu, String nomejogador){
+    static void taberna4(int walk){
         System.out.println("Chimbinha – Entendeu? \n"
                     +"Antes de ao menos nomejogador pensar em responder você escuta uma confusão nos fundos, aparentemente tem dois homens discutindo, eles se levantam e começam a jogar as bebidas uns nos outros \n"
                 +"Chimbinha – Ahh e por esses motivos que eu não me aposento, amo ouvir uma boa briga logo de banham hahaha! pois eles têm que pagar todo o conserto depois e sempre ganho uns moveis novos \n"
@@ -388,7 +399,7 @@ nomejogador acertou
  bom a ideia é basicamente responder 3 questões corretas finaliza o jogo, caso contrário retorna o jogo*/
     
     
-    static void taberna5(int opcaomenu, String nomejogador){
+    static void taberna5(int walk){
         System.out.println(""
                 + "Chimbinha – Realmente, você demonstrou conhecimento, meus parabéns.\n"
                 +"Chimbinha – Aqui, assine isso.\n"
@@ -407,7 +418,7 @@ nomejogador acertou
     
    public static void main(String[] args) {
     int opcaomenu = menu();  
-    controle (opcaomenu, nomejogador, opcaomenu );
+    controle (opcaomenu, opcaomenu);
    }
   }
 
