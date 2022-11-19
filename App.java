@@ -49,12 +49,21 @@ public static int menu(){
     }
      
 public static int sinopse (int opcaomenu) {
-  System.out.println("Rascunho ");
+  System.out.println("Sinopse: \n"
+    + "   Duas história. A taberna e a casa, na taberna você será um jovem que por causa da linha do\n"
+    + "destino encontra um bom homem em sua taberna que irá ajudar em seu sonho empreendedor \n"
+    + "      \n "
+    + "Em A casa, você será um caçador de monstro que irá aceitar mais um contrato, porém um \n"
+    + "homem que parece não saber como parar de falar, irá te guiar nesse serviço estranhamente \n"
+    + "relacionado a administração ") ");
+          
   return opcaomenu;
 }
 
 public static int instrucoes (int opcaomenu) {
-  System.out.println("Rascunhoinstru ");
+  System.out.println("instruçoes:\n"
+    + "Esse jogo é game -rpg com objetivo de abordar assunto de administração.\n"
+    + "Durante a histora terá perguntas relacionada ao tema, o jogador, no caso você tem 3 chances de acertar elas. Bom jogo\n" ");
   return opcaomenu;
 }
 
