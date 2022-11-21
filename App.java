@@ -779,6 +779,184 @@ nomejogador acertou
              
     }
 
+            static void casa0 (int walk){
+        
+                 System.out.println("Era de noite, um homem montado a cavalo passava pela uma estrada cheia de nevoas, indo em direção a uma grande vila chamada Vila do Corvo\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("O homem passa pela entrada da vila e vai em direção a um estabulo, lá ele deixa seu cavalo e parte em direção a uma estalagem\n" +
+                 "La dentro está cheio de pessoas, conversando, bebendo e até jogando uns jogos de carta.\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}    
+                 
+                 System.out.println("ELe vai até um mural onde são colocados contratos, algo como contrato de segurança, caçador de monstros ou de pessoas em alguns casos.\n" +
+                 "Ele olha e pega um e começa ler;\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Contrate-se caçador de monstros para livra uma casa de fantasma e outros seres do tipo, recompensa 6000 po (peça de outro), caso alguém se interessar ir falar com Jasquim no cruzamento da feira dos altares, número 0.\n"); 
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Após pegar a folha o homem vai em direção ao balcão e pergunta ao taberneiro se ele o poderia informar onde encontrar o local do contrato\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Taberneiro – Olha só, faz tempo que não vejo um caçador de monstro por aqui, você esta todo bem equipado com essas poções e tem uma bela espada em suas consta, como se chama?\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Sim, esse é você, um caçador de monstro que está indo em direção a mais um contrato, agora diga o seu nome \n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 
+                 System.out.println(nomejogador + " – Me chamo " + nomejogador + " e sim, hoje em dia os números de caçadores estão cada vez menor, é uma profissão difícil.\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println(nomejogador + " - Agora pode me informar onde fica esse local ou nao ?");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Você entrega o papel ao Taberneiro e ele começa a ler.\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Taberneiro –   A sim, conheço o lugar e conheço o Jasquim hahaha.\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println(" Você percebe que ele rir, porém não entende o motivo\n" );
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Taberneiro – Espero que esteja preparado para esse contrato jogador, pois Jasquim e pior que qualquer monstro que você já enfrentou, eu aposto haha.\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println(nomejogador + " – por quê? \n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Taberneiro – Digamos que ele e o tipo de pessoa que você não gostaria de começar a conversar, enfim tenho clientes para cuidar, se quiser ir para lá e só seguir esse caminho.\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("O taberneiro fala o local e você parte em direção.\n" );
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Passa alguns minutos e você está lá, bem em frente o endereço indicado no contrato, você bate na porta e escuda alguém vindo abri-la.\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+         
+                 System.out.println(nomejogador + " – Olá eu vi o ...\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Sem ao menos terminar de falar Jasquim o interrompe \n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Jasquim - AA então finalmente alguém aceito o contrato, olá eu sou Jasquim seja bem-vindo entre entre.\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Você entra.\n");
+                  System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Jasquim – É tão bom ver um caçador por aqui, estou precisando muito me livrar das quelas aberrações, quando mais rápido for mais rápido irei ter meu negócio e serei rico hahaha!\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Jogador - Seria aqui a casa onde estão as assombrações?\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+
+                 System.out.println("Jasquim – Não não, a casa fica mais no centro, é uma casa simples irei te levar lá\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+
+                 System.out.println("Vocês saem e vão em direção ao local onde está amaldiçoado,\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+
+                 System.out.println("Ao chegar você se depara com uma casa toda velha e aparentemente esta abandonada a alguns bons anos  \n" );
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+
+                 System.out.println(" Jasquim – Aqui estamos, bonita não? Essa vai ser a mais famosa loja de poções dessa vila, pode apostar. É claro, se você conseguir eliminar esses seres que vivem assombrando o local \n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+
+                 System.out.println("Jogador certo, irei entrar\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+
+                 System.out.println("Você entra, mas logo atras está o Jasquim\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Jasquim – Eu e meus irmãos queremos abrir uma loja de poção aqui, estudamos muito para isso sabe, até vimos meios de administrar \n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+
+                 System.out.println("Jogador- legal, mas pode ser perigoso aqui, e melhor você ficar lá fora\n");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                 
+                 System.out.println("Jacks o do meio, falou sobre algumas teorias de administração, sabe o que é?");
+                 System.out.println("Aperte enter para seguir"); 
+                 try{System.in.read();}
+                 catch(Exception e){}
+                    
+                    
+        /*  ((pergunta sobre oque e a teoria de adm.))
+                 
+       Caso errar 
+     (aparecer uma mensagem falando que está errada e dá uma dica)
+                 
+     Caso errar 3 vezes 
+     (aparecer isso; você não soube responder, fico de saco cheio de ouvir sobre isso e decide ir embora, fim de jogo, voltar ao menu)
+                 
+     Caso acertar
+     Continua a historia*/
+                    
     
     
    public static void main(String[] args) {
