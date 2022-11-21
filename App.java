@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 
@@ -6,7 +8,7 @@ public class App {
 
 
 
-
+public static int contaberna;
 public static String nomejogador;
 
 
@@ -81,14 +83,153 @@ public static void caminhos (int opcaomenu) {
 validacoes(walk); // fazer a pergunta com a mesma logica
 }
   
-   
+public static int questaoQuatro(int walk) {
+   Scanner entrada = new Scanner(System.in);
+     String pergunta04tb;
+     int resp04tb;
+     boolean acertou04 = false;
+     ArrayList<String> alternativa = new ArrayList<String>();/* criação da lista */
+     alternativa.add("Administração Científica"); // *resposta corrreta */
+     alternativa.add("Administração Clássica");
 
+      // do {
+
+        Collections.shuffle(alternativa);// **embaralha as alternativas**//
+
+        pergunta04tb = "\nQual teoria se concentrou em melhorar a eficiência de cada indivíduo dentro da organização?\n"
+              + "\n1) " + alternativa.get(0) + "\n" + "2) " + alternativa.get(1);
+        System.out.println(pergunta04tb);
+        resp04tb = entrada.nextInt();
+        switch (resp04tb) {
+          //  case "a":
+          //  case "A":
+          case 1:
+              if (alternativa.get(0).equals("Administração Científica")) {
+                 System.out.println("Parabéns! começou bem os negócios.");
+                 acertou04 = true;
+                 
+  contaberna++;
+  return resp04tb;
+              } else {
+                  System.out.println("Que pena você errou! Acabou de perder as formas de molde de espadas");
+              }
+              break;
+          //  case "b":
+          //  case "B":
+          case 2:
+              if (alternativa.get(1).equals("Administração Científica")) {
+                 System.out.println("Parabéns! começou bem os negócios.");
+                 acertou04 = true;
+
+              } else {
+                 System.out.println("Que pena você errou! Acabou de perder as formas de molde de espadas");
+              }
+              break;
+           default:
+              System.out.println("\n Opção Inválida");
+            }      return resp04tb;
+
+    //}   //tem que achar um jeito de conta com o while (resp04tb != 1 && resp04tb != 2 );
+    
+}
+public static String questaoCinco(int walk) {
+   Scanner entrada = new Scanner(System.in);
+     String pergunta05, resp05tb;
+     boolean acertou05 = false;
+     ArrayList<String> alternativa = new ArrayList<String>();/* criação da lista */
+     alternativa.add("O líder deve ser arbitrário em suas decisões.");
+     alternativa.add("As críticas devem ser evitadas.");
+     alternativa.add("A equipe deve respeitar as divergências e diversidades.");// *resposta corrreta */
+     alternativa.add("As opiniões deverão ser ignoradas");
+     alternativa.add("As responsabilidades devem ser delegadas.");
+
+     do {
+
+        Collections.shuffle(alternativa);// **embaralha as alternativas**//
+
+        pergunta05 = "\nUma equipe alinhada e bem relacionada trará um ambiente de trabalho agradável e mais produtivo,"
+              + " pensando nisso é correto afirmar que em relação ao bom desenvolvimento de toda a equipe:\n"
+              + "\na) " + alternativa.get(0) + "\n" + "b) " + alternativa.get(1) + "\n" + "c) " + alternativa.get(2)
+              + "\n" + "d) " + alternativa.get(3)
+              + "\n" + "e) " + alternativa.get(4);
+        System.out.println(pergunta05);
+        resp05tb = entrada.next();
+        switch (resp05tb) {
+           case "a":
+           case "A":
+              if (alternativa.get(0).equals("A equipe deve respeitar as divergências e diversidades.")) {
+                 System.out.println("Parabéns! Parece que você está indo bem nos negócios");
+                 acertou05 = true;
+                 contaberna++;
+
+              } else {
+                 System.out.println(
+                       "Que pena você errou! Você acabou de perder o galpão, desse jeito vai se dá mal hein!");
+              }
+              break;
+           case "b":
+           case "B":
+              if (alternativa.get(1).equals("A equipe deve respeitar as divergências e diversidades.")) {
+                 System.out.println("Parabéns! Parece que você está indo bem nos negócios");
+                 acertou05 = true;
+
+              } else {
+                 System.out.println(
+                       "Que pena você errou! Você acabou de perder o galpão, desse jeito vai se dá mal hein!");
+              }
+              break;
+           case "c":
+           case "C":
+              if (alternativa.get(2).equals("A equipe deve respeitar as divergências e diversidades.")) {
+                 System.out.println("Parabéns! Parece que você está indo bem nos negócios");
+                 acertou05 = true;
+
+              } else {
+                 System.out.println(
+                       "Que pena você errou! Você acabou de perder o galpão, desse jeito vai se dá mal hein!");
+              }
+              break;
+           case "d":
+           case "D":
+              if (alternativa.get(3).equals("A equipe deve respeitar as divergências e diversidades.")) {
+                 System.out.println("Parabéns! Parece que você está indo bem nos negócios");
+                 acertou05 = true;
+
+              } else {
+                 System.out.println(
+                       "Que pena você errou! Você acabou de perder o galpão, desse jeito vai se dá mal hein!");
+              }
+              break;
+           case "e":
+           case "E":
+              if (alternativa.get(4).equals("A equipe deve respeitar as divergências e diversidades.")) {
+                 System.out.println("Parabéns! Parece que você está indo bem nos negócios");
+                 acertou05 = true;
+
+              } else {
+                 System.out.println(
+                       "Que pena você errou! Você acabou de perder o galpão, desse jeito vai se dá mal hein!");
+              }
+              break;
+           default:
+              System.out.println("Opção Inválida");
+        }
+
+     } while (!acertou05);
+   return resp05tb;
+    }
+
+
+
+
+
+ // public static void validperguntas
 
  public static void validacoes (int walk) {
    if (walk == 1){
     taberna0(walk);
-    taberna1(walk);
-    taberna2(walk);
+    taberna1(walk, nomejogador);
+    taberna2(walk, nomejogador);
     taberna3(walk);
     taberna4(walk);
     taberna5(walk);
@@ -230,8 +371,7 @@ break;
    
    //fazer uma função que pergunta o nome do jogador 
    
-      static void taberna1(int walk) {
-        System.out.println(nomejogador);
+      static void taberna1(int walk, String resp04tb) {
 
         System.out.println("Aperte enter para seguir"); 
         try{System.in.read();}
@@ -263,9 +403,12 @@ break;
                   try{System.in.read();}
                   catch(Exception e){}
                   
+                  questaoQuatro(walk);
+
                   System.out.println( "– O que seria a teoria da administração");
 
-                  System.out.println(nomejogador);
+        System.out.println("Teste " + contaberna);
+
 
 
 
@@ -275,11 +418,9 @@ break;
 
     // (((por a quest perguntando oque é teoria da adm)))
    
-      static void taberna2(int walk){
-        System.out.println(nomejogador);
-        try{System.in.read();}
-        catch(Exception e){}
+      static void taberna2(int walk, String resp04tb){
 
+        
 
         System.out.println(
                     nomejogador + " – Interessante, deveria te pesquisado mais sobre isso antes de ir falar com o agiota enfim, mas acho que esta tarde demais, não sei se isso vai me ajudar agora na minha situação.\n"
@@ -291,12 +432,16 @@ break;
                     +"Umas horas passam. \n" +"O sol passa diante a janela e vai em direção aos seus olhos, você levante e se arruma para mais um dia, antes de sair de seu quarto você lembra Chimbinha disse que iria te ajudar.\n" 
                     +"Você lembra que ele disse algo sobre administração e deseja ir ver se você não tem algum livro disso em seu escritório \n" 
                     +"Você finalmente acha o que estava procurando, dois livros, um com o título, administração clássica e o outro com o nome de administração cientifica  ");
+                    questaoCinco(walk);
    }
     
     
     //((Perguntar ao jogador qual é o nome dos criadores da adm. clássica e científico))
     
         static void taberna3(int walk){
+
+          System.out.println("Teste " + contaberna);
+
             System.out.println(
                     " Após pegar os livros e ler um pouco você percebe que está quase na hora de ir ver Chimbinha e se arruma para ver seu amigo\n" 
                     +"É uma e vinte da tarde, o movimente esta como sempre esteve, alguns humanos conversando sobre as colheitas, um anão no fundo fumando e alguns orcs fazendo quebra de braça, tudo como sempre foi.\n"
