@@ -83,8 +83,158 @@ public static void caminhos (int opcaomenu) {
   } while (walk >= 3 || walk <= 0 ) ;
 validacoes(walk); // fazer a pergunta com a mesma logica
 }
+public static int questaoDois(int walk) {
+   Scanner entrada = new Scanner(System.in) {
+      String pergunta02;
+      int resp02tb;
+      ArrayList<String> alternativa = new ArrayList<String>();/* criação da lista */
+      alternativa.add("Elton Mayo e Max Weber.");
+      alternativa.add("Max Weber e Henri Fayol.");
+      alternativa.add("Henri Fayol e Frederick Taylor");// *resposta corrreta */
+      alternativa.add("Frederick Taylor e Elton Mayo.");
+      alternativa.add("Peter Drucker e Philip Selznick");
+
+      Collections.shuffle(alternativa);// **embaralha as alternativas**//
+
+      pergunta02 = "\nAgora que encontrou esses dois livros, quais os nomes dos criadores das Teorias Classica e Científica?\n"
+            + "\n1) " + alternativa.get(0) + "\n" + "2) " + alternativa.get(1) + "\n" + "3) " + alternativa.get(2)
+            + "\n" + "4) " + alternativa.get(3)
+            + "\n" + "5) " + alternativa.get(4);
+      System.out.println(pergunta05);
+      resp02tb = entrada.nextInt();
+      switch (resp02tb) {
+         case 1:
+            if (alternativa.get(0).equals("Henri Fayol e Frederick Taylor")) {
+               System.out.println("Parabéns! Você deve ter aprendido muito com esses autores");
+
+            } else {
+               System.out.println(
+                     "Que pena você errou! Acho que pegou livro errado. Tem certeza que são esses os autores?");
+            }
+            break;
+         case 2:
+            if (alternativa.get(1).equals("Henri Fayol e Frederick Taylor")) {
+               System.out.println("Parabéns! Você deve ter aprendido muito com esses autores");
+
+            } else {
+               System.out.println(
+                  "Que pena você errou! Acho que pegou livro errado. Tem certeza que são esses os autores?");
+            }
+            break;
+         case 3:
+            if (alternativa.get(2).equals("Henri Fayol e Frederick Taylor")) {
+               System.out.println("Parabéns! Você deve ter aprendido muito com esses autores");
+
+            } else {
+               System.out.println(
+                  "Que pena você errou! Acho que pegou livro errado. Tem certeza que são esses os autores?");
+            }
+            break;
+         case 4:
+            if (alternativa.get(3).equals("Henri Fayol e Frederick Taylor")) {
+               System.out.println("Parabéns! Você deve ter aprendido muito com esses autores");
+
+            } else {
+               System.out.println(
+                  "Que pena você errou! Acho que pegou livro errado. Tem certeza que são esses os autores?");
+            }
+            break;
+         case 5:
+            if (alternativa.get(4).equals("Henri Fayol e Frederick Taylor")) {
+               System.out.println("Parabéns! Você deve ter aprendido muito com esses autores");
+
+            } else {
+               System.out.println(
+                  "Que pena você errou! Acho que pegou livro errado. Tem certeza que são esses os autores?");
+            }
+            break;
+         default:
+            System.out.println("Opção Inválida");
+      }
+   }
+}
+
+
+
+public static int questaoTres(int walk) {
+   try (Scanner entrada = new Scanner(System.in)) {
+      String pergunta03;
+      int resp03tb;
+      ArrayList<String> alternativa = new ArrayList<String>();/* criação da lista */
+      alternativa.add("Teoria das Relações Humanas.");
+      alternativa.add("Teoria Classica.");
+      alternativa.add("Teoria Científica.");// *resposta corrreta */
+      alternativa.add("Teoria dos Sistemas.");
+      alternativa.add("Teoria Comportamental.");
+
+      Collections.shuffle(alternativa);// **embaralha as alternativas**//
+
+      pergunta03 = "\nVocê pega o livro e começa a ler, esse livro fala sobre CAPACITAÇÂO de um trabalhador. 
+      Qual teoria administrativa refere-se esse livro?:\n"
+            + "\n1) " + alternativa.get(0) + "\n" + "2) " + alternativa.get(1) + "\n" + "3) " + alternativa.get(2)
+            + "\n" + "4) " + alternativa.get(3)
+            + "\n" + "5) " + alternativa.get(4);
+      System.out.println(pergunta03);
+      resp03tb = entrada.nextInt();
+      switch ( resp03tb) {
+         case 1:
+            if (alternativa.get(0).equals("Teoria Científica.")) {
+               System.out.println("Parabéns! Parece que está treinando e capacitando bem seus funcionários");
+
+            } else {
+               System.out.println(
+                     "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro. 
+                     Não conseguirá treinar ninguém assim!");
+            }
+            break;
+         case 2:
+            if (alternativa.get(1).equals("Teoria Científica.")) {
+               System.out.println("Parabéns! Parece que está treinando e capacitando bem seus funcionários");
+
+            } else {
+               System.out.println(
+                  "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro. 
+                  Não conseguirá treinar ninguém assim!");
+            }
+            break;
+         case 3:
+            if (alternativa.get(2).equals("Teoria Científica.")) {
+               System.out.println("Parabéns! Parece que está treinando e capacitando bem seus funcionários");
+
+            } else {
+               System.out.println(
+                  "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro. 
+                  Não conseguirá treinar ninguém assim!");
+            }
+            break;
+         case 4:
+            if (alternativa.get(3).equals("Teoria Científica.")) {
+               System.out.println("Parabéns! Parece que está treinando e capacitando bem seus funcionários");
+
+            } else {
+               System.out.println(
+                  "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro. 
+                  Não conseguirá treinar ninguém assim!");
+            }
+            break;
+         case 5:
+            if (alternativa.get(4).equals("Teoria Científica.")) {
+               System.out.println("Parabéns! Parece que está treinando e capacitando bem seus funcionários");
+
+            } else {
+               System.out.println(
+                  "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro. 
+                  Não conseguirá treinar ninguém assim!");
+            }
+            break;
+         default:
+            System.out.println("Opção Inválida");
+      }
+   }
+}
+
   
-private static int questaoQuatro(int walk) {
+public static int questaoQuatro(int walk) {
    Scanner entrada = new Scanner(System.in);
      String pergunta04tb;
      int resp04tb;
@@ -219,6 +369,138 @@ public static String questaoCinco(int walk) {
    return resp05tb;
     }
 
+    public static int questaoSeis(int walk) {
+      Scanner entrada = new Scanner(System.in) {
+         String pergunta06;
+         int resp06tb;
+         ArrayList<String> alternativa = new ArrayList<String>();/* criação da lista */
+         alternativa.add(" Não padronização.");
+         alternativa.add(" Customização da produção.");
+         alternativa.add(" Produção em Massa.");// *resposta corrreta */
+         alternativa.add(" Liberdade de formas de trabalho.");
+
+         Collections.shuffle(alternativa);// **embaralha as alternativas**//
+
+         pergunta06 = "\nAo buscar aumentar sempre a produtividade, a Administração científica voltou-se para a tecnologia de:\n"
+               + "\n1) " + alternativa.get(0) + "\n" + "2) " + alternativa.get(1) + "\n" + "3) " + alternativa.get(2)
+               + "\n" + "4) " + alternativa.get(3);
+         System.out.println(pergunta06);
+         resp06tb = entrada.nextInt();
+         switch (resp06tb) {
+            case 1:
+               if (alternativa.get(0).equals(" Produção em Massa.")) {
+                  System.out.println("Parabéns! Parece que você está indo bem nos negócios");
+
+               } else {
+                  System.out.println(
+                        "Que pena você errou! Você acabou de perder o cômodo para a loja, bom parece que você perdeu tudo!!");
+               }
+               break;
+            case 2:
+               if (alternativa.get(1).equals(" Produção em Massa.")) {
+                  System.out.println("Parabéns! Parece que você está indo bem nos negócios");
+
+               } else {
+                  System.out.println(
+                        "Que pena você errou! Você acabou de perder o cômodo para a loja, bom parece que você perdeu tudo!!");
+               }
+               break;
+            case 3:
+               if (alternativa.get(2).equals(" Produção em Massa.")) {
+                  System.out.println("Parabéns! Parece que você está indo bem nos negócios");
+
+               } else {
+                  System.out.println(
+                        "Que pena você errou! Você acabou de perder o cômodo para a loja, bom parece que você perdeu tudo!!");
+               }
+               break;
+            case 4:
+               if (alternativa.get(3).equals(" Produção em Massa.")) {
+                  System.out.println("Parabéns! Parece que você está indo bem nos negócios");
+
+               } else {
+                  System.out.println(
+                        "Que pena você errou! Você acabou de perder o cômodo para a loja, bom parece que você perdeu tudo!!");
+               }
+               break;
+            default:
+               System.out.println("Opção Inválida");
+         }
+      }
+
+   }
+
+   public static int questaoSete(int walk) {
+   Scanner entrada = new Scanner(System.in) {
+         String pergunta07;
+         int resp07tb, tentativa = 0;
+         boolean acertou07 = false;
+         ArrayList<String> alternativa = new ArrayList<String>();/* criação da lista */
+         alternativa.add(" Ênfase na estrutura");// *resposta corrreta */
+         alternativa.add(" Ênfase nas tarefas");
+         alternativa.add(" Ênfase no mercado");
+         alternativa.add(" Ênfase na indústria");
+
+         do {
+
+            Collections.shuffle(alternativa);// **embaralha as alternativas**//
+
+            pergunta07 = "\nAs origens da Abordagem Clássica da Administração remontam às consequências geradas pela Revolução Industrial e podem ser resumidas em dois fatos genéricos:"
+                  +
+                  "o crescimento acelerado e desorganizado das empresas e a necessidade de aumentar a eficiência e a competência das organizações."
+                  +
+                  "A Abordagem Clássica da Administração foi desdobrada em Administração Científica (Taylor) e Teoria Clássica (Fayol). Aponte a alternativa que indica a ênfase da Teoria Clássica.\n"
+                  + "\n1) " + alternativa.get(0) + "\n" + "2) " + alternativa.get(1) + "\n" + "3) " + alternativa.get(2)
+                  + "\n" + "4) " + alternativa.get(3);
+            System.out.println(pergunta07);
+            resp07tb= entrada.nextInt();
+            switch (resp07tb) {
+               case 1:
+                  if (alternativa.get(0).equals(" Ênfase na estrutura"))
+                     acertou07 = true;
+                  tentativa = tentativa + 1;
+
+                  break;
+               case 2:
+
+                  if (alternativa.get(1).equals(" Ênfase na estrutura")) {
+                     acertou07 = true;
+                     tentativa = tentativa + 1;
+
+                  }
+                  break;
+               case 3:
+
+                  if (alternativa.get(2).equals(" Ênfase na estrutura")) {
+                     acertou07 = true;
+                     tentativa = tentativa + 1;
+
+                  }
+
+                  break;
+               case 4:
+                  if (alternativa.get(3).equals(" Ênfase na estrutura")) {
+                     acertou07 = true;
+                     tentativa = tentativa + 1;
+
+                  }
+                  break;
+               default:
+                  System.out.println("Opção Inválida");
+                  tentativa = tentativa + 1;
+
+            }
+
+         } while (!acertou07 & tentativa < 3);
+         if (acertou07) {
+            System.out.println("Parabéns! Parece que você está indo bem nos negócios");
+
+         } else {
+            System.out.println(
+                  "Que pena você perdeu tudo! Que tal revisarmos o conteúdo");
+         }
+      }
+   }
 
 
 
