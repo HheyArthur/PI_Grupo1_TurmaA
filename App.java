@@ -63,7 +63,7 @@ public static int instrucoes (int opcaomenu) {
 
 public static void sair (int opcaomenu) {
   System.out.println("Saindo... ");
-  System.exit(5);
+  System.exit(0);
 
 }
 
@@ -73,7 +73,8 @@ public static void caminhos (int opcaomenu) {
   do{
 
   Scanner input = new Scanner(System.in);
-  System.out.println("Escolha um caminhos");
+  System.out.println( "Duas historia com o mesmo objetivo, faça sua escolha e siga o seu caminho");
+  System.out.println("Escolha uma opção para se aventurar: ");
   System.out.println("1 - Taberna");
   System.out.println("2 - Casa");
 
@@ -83,16 +84,16 @@ public static void caminhos (int opcaomenu) {
 validacoes(walk); // fazer a pergunta com a mesma logica
 }
   
-public static int questaoQuatro(int walk) {
+private static int questaoQuatro(int walk) {
    Scanner entrada = new Scanner(System.in);
      String pergunta04tb;
      int resp04tb;
      boolean acertou04 = false;
      ArrayList<String> alternativa = new ArrayList<String>();/* criação da lista */
-     alternativa.add("Administração Científica"); // *resposta corrreta */
+     alternativa.add("Administração Científica"); // *resposta correta */
      alternativa.add("Administração Clássica");
 
-      // do {
+      //do {
 
         Collections.shuffle(alternativa);// **embaralha as alternativas**//
 
@@ -109,7 +110,6 @@ public static int questaoQuatro(int walk) {
                  acertou04 = true;
                  
   contaberna++;
-  return resp04tb;
               } else {
                   System.out.println("Que pena você errou! Acabou de perder as formas de molde de espadas");
               }
@@ -126,12 +126,12 @@ public static int questaoQuatro(int walk) {
               }
               break;
            default:
-              System.out.println("\n Opção Inválida");
+              System.out.println("\n Opção inválida digite uma pção valida para soma acertos");
             }      return resp04tb;
+         }
 
-    //}   //tem que achar um jeito de conta com o while (resp04tb != 1 && resp04tb != 2 );
-    
-}
+    //}   //tem que achar um jeito de conta com o while        } while (resp04tb <= 0 && resp04tb >= 3 );
+ 
 public static String questaoCinco(int walk) {
    Scanner entrada = new Scanner(System.in);
      String pergunta05, resp05tb;
@@ -236,7 +236,7 @@ public static String questaoCinco(int walk) {
    }
    if (walk == 2) {
     System.out.println("x");
-    // casa0(walk);
+    casa0(walk);
     // casa1(walk);
     // casa2(walk);
     // casa3(walk);
@@ -328,17 +328,17 @@ break;
                   try{System.in.read();}
                   catch(Exception e){}
                   
-                  System.out.println("Chimbinha – Olá em que posso ajudar? ");
+                  System.out.println("Chimbinha ... Olá em que posso ajudar? ");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
                   
-                  System.out.println(" Desconhecido ¬– Me dê alguma coisa forte, hoje meu dia foi terrível.");
+                  System.out.println(" Desconhecido ¬... Me dê alguma coisa forte, hoje meu dia foi terrível.");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
                   
-                  System.out.println("Chimbinha – Vamos ver...");
+                  System.out.println("Chimbinha ... Vamos ver...");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
@@ -348,12 +348,12 @@ break;
                   try{System.in.read();}
                   catch(Exception e){}
                   
-                  System.out.println("Chimbinha – Aqui está, um bom e velho Licor Luminoso, feito de diversas frutas, ervas e temperos. É tipo um licor comum com uma glândula luminosa de um Besouro de Fogo.");
+                  System.out.println("Chimbinha ... Aqui está, um bom e velho Licor Luminoso, feito de diversas frutas, ervas e temperos. É tipo um licor comum com uma glândula luminosa de um Besouro de Fogo.");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
                   
-                  System.out.println("Desconhecido – Se ela for tão boa que nem sua aparência");
+                  System.out.println("Desconhecido ... Se ela for tão boa que nem sua aparência");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
@@ -363,7 +363,7 @@ break;
                   try{System.in.read();}
                   catch(Exception e){}
                   
-                  System.out.println("Chimbinha – Me diga, qual é o seu nome? Nunca vi você por aqui e o que te deixa tão desconfortável ao ponto de se embriagar a essas horas ");
+                  System.out.println("Chimbinha ... Me diga, qual é o seu nome? Nunca vi você por aqui e o que te deixa tão desconfortável ao ponto de se embriagar a essas horas ");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
@@ -376,7 +376,7 @@ break;
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
-                  System.out.println(" Desconhecido – Me chamo... ");
+                  System.out.println(" Desconhecido ... Me chamo... ");
                   pedirnome();
                     //chamar nomejogador 
                   
@@ -384,16 +384,17 @@ break;
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
+
                   System.out.println( "Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
                   
-                  System.out.println("Chimbinha – Como assim? ");
+                  System.out.println("Chimbinha ... Como assim? ");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
                   
-                  System.out.println(   "Estava juntando umas pratas para abrir um negócio, contratei uma equipe    de goblins operários e construir minha fábrica de armadura e estava tudo indo bem, tinha meus funcionários e eu seria o gerente e cuidaria das finanças, porém deu tudo errado");
+                  System.out.println(  "Estava juntando umas pratas para abrir um negócio, contratei uma equipe    de goblins operários e construir minha fábrica de armadura e estava tudo indo bem, tinha meus funcionários e eu seria o gerente e cuidaria das finanças, porém deu tudo errado");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
@@ -405,7 +406,7 @@ break;
                   
                   questaoQuatro(walk);
 
-                  System.out.println( "– O que seria a teoria da administração");
+                 // System.out.println( "... O que seria a teoria da administração");
 
                  System.out.println("Teste " + contaberna);
               
@@ -422,23 +423,23 @@ break;
     
       static void taberna2(int walk, String resp04tb){
 
-                  System.out.println( nomejogador + " – Interessante, deveria te pesquisado mais sobre isso antes de ir falar com o agiota enfim, mas acho que esta tarde demais, não sei se isso vai me ajudar agora na minha situação.\n");
+                  System.out.println( nomejogador + " ... Interessante, deveria te pesquisado mais sobre isso antes de ir falar com o agiota enfim, mas acho que esta tarde demais, não sei se isso vai me ajudar agora na minha situação.\n");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
                 
-                  System.out.println("Chimbinha – Bom eu posso te ajudar, talvez você não saiba mais eu tenho várias tabernas, principalmente na capital, estou por aqui pois quero continuar trabalhando, porém gosto da calmaria que tem por aqui. Se quiser vir aqui de manhã podemos ver como reverter a sua situação \n");
+                  System.out.println("Chimbinha ... Bom eu posso te ajudar, talvez você não saiba mais eu tenho várias tabernas, principalmente na capital, estou por aqui pois quero continuar trabalhando, porém gosto da calmaria que tem por aqui. Se quiser vir aqui de manhã podemos ver como reverter a sua situação \n");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
                   
 
-                  System.out.println( nomejogador +" – Certo, irei vir sim, pode deixar, mas antes me ver mais uma aí.\n");
+                  System.out.println( nomejogador +" ... Certo, irei vir sim, pode deixar, mas antes me ver mais uma aí.\n");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){} 
                 
-                  System.out.println("Chimbinha – Só mais uma, não quero perder um cliente por causa de um coma alcoólico.\n");
+                  System.out.println("Chimbinha ... Só mais uma, não quero perder um cliente por causa de um coma alcoólico.\n");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
@@ -452,12 +453,12 @@ break;
                  System.out.println("Umas horas passam. \n" 
                  +"O sol passa diante a janela e vai em direção aos seus olhos, você levante e se arruma para mais um dia, antes de sair de seu quarto você lembra Chimbinha disse que iria te ajudar.\n" 
                  +"Você lembra que ele disse algo sobre administração e deseja ir ver se você não tem algum livro disso em seu escritório \n" 
-                 +"Você finalmente acha o que estava procurando, dois livros, um com o título, administração clássica e o outro com o nome de administração cientifica ");
+                 +"Você finalmente acha o que estava procurando. dois livros, um com o título, administração clássica e o outro com o nome de administração cientifica ");
                     questaoCinco(walk);
    }
     
     
-    //((Perguntar ao jogador qual é o nome dos criadores da adm. clássica e científico))
+    
     
         static void taberna3(int walk){
 
@@ -479,12 +480,12 @@ break;
                   try{System.in.read();}
                   catch(Exception e){}
                             
-                  System.out.println(nomejogador +" – Saudação Chimbinha.\n");
+                  System.out.println(nomejogador +" ... Saudação Chimbinha.\n");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
                          
-                  System.out.println("Chimbinha – Até que enfim você veio, pensei que iria sumir de vez depois de tanto beber ontem.\n");
+                  System.out.println("Chimbinha ... Até que enfim você veio, pensei que iria sumir de vez depois de tanto beber ontem.\n");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
@@ -494,7 +495,7 @@ break;
                   try{System.in.read();}
                   catch(Exception e){}
                          
-                  System.out.println("Chimbinha – Bom, espero que agora siga os meus conselhos pois irei te ensinar como ter um negócio. Primeiro, o que pretender fazer\n");
+                  System.out.println("Chimbinha ... Bom, espero que agora siga os meus conselhos pois irei te ensinar como ter um negócio. Primeiro, o que pretender fazer\n");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
@@ -505,12 +506,12 @@ break;
                   try{System.in.read();}
                   catch(Exception e){}
                          
-                  System.out.println("Chimbinha – Ter um foco já é um bom começo, fazer isso sozinho é complicado recomendo achar alguém para te ajudar, principalmente na fornalha, é bom ter alguém para trabalhar com você\n");
+                  System.out.println("Chimbinha ... Ter um foco já é um bom começo, fazer isso sozinho é complicado recomendo achar alguém para te ajudar, principalmente na fornalha, é bom ter alguém para trabalhar com você\n");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
                          
-                  System.out.println(nomejogador + " – posso estar vendo isso.\n");
+                  System.out.println(nomejogador + " ... posso estar vendo isso.\n");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}       
@@ -520,7 +521,7 @@ break;
                   try{System.in.read();}
                   catch(Exception e){}
                          
-                  System.out.println("Chimbinha – Eu vi isso nesse livro, (ele tira um livro de baixo da mesa, aparentemente ele tinha deixado ali para te mostrar futuramente).\n");
+                  System.out.println("Chimbinha ... Eu vi isso nesse livro, (ele tira um livro de baixo da mesa, aparentemente ele tinha deixado ali para te mostrar futuramente).\n");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
@@ -535,10 +536,10 @@ break;
 
     //((Questão sobre capacitação de funcionário))
     
-    static void taberna4(int walk){
+    static void taberna4(int walk) {
             
             
-                 System.out.println("Chimbinha – Entendeu? \n");
+                 System.out.println("Chimbinha ... Entendeu? \n");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
@@ -548,7 +549,7 @@ break;
                   try{System.in.read();}
                   catch(Exception e){}
             
-                 System.out.println("Chimbinha – Ahh e por esses motivos que eu não me aposento, amo ouvir uma boa briga logo de banham hahaha! pois eles têm que pagar todo o conserto depois e sempre ganho uns moveis novos \n");
+                 System.out.println("Chimbinha ... Ahh e por esses motivos que eu não me aposento, amo ouvir uma boa briga logo de banham hahaha! pois eles têm que pagar todo o conserto depois e sempre ganho uns moveis novos \n");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
@@ -556,9 +557,9 @@ break;
                  System.out.println("Você se assusta,  apensar de gostar de beber você não tem costume de frequentar tabernas grandes como essa.\n");
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
-                  catch(Exception e){
+                  catch(Exception e){}
                          
-                System.out.println("Chimbinha – enfim, acho que já está bom de diversão, vai que eles não tenham dinheiro para pagar por mais estrago do já que fizeram\n");
+                System.out.println("Chimbinha ... enfim, acho que já está bom de diversão, vai que eles não tenham dinheiro para pagar por mais estrago do já que fizeram\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -568,30 +569,30 @@ break;
                  try{System.in.read();}
                  catch(Exception e){}
                           
-                System.out.println("Chimbinha – Enfim e voltando ao assunto. \n");
+                System.out.println("Chimbinha ... Enfim e voltando ao assunto. \n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                           
-                System.out.println("Chimbinha – Oie ta me ouvindo?\n");
+                System.out.println("Chimbinha ... Oie ta me ouvindo?\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                           
-                System.out.println(nomejogador + " – Ah sim, estava concentrado\n");
+                System.out.println(nomejogador + " ... Ah sim, estava concentrado\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                           
-                System.out.println("Chimbinha – Que bom.\n");
+                System.out.println("Chimbinha ... Que bom.\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                           
-                System.out.println("Chimbinha – Vamos fazer o seguinte, pegue estes livros e estude – os, quando voltar irei testar seus conhecimentos.\n");
+                System.out.println("Chimbinha ... Vamos fazer o seguinte, pegue estes livros e estude ... os, quando voltar irei testar seus conhecimentos.\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
-                 catch(Exception e){    
+                 catch(Exception e){}   
                          
                 System.out.println(nomejogador + " - Certo, pode deixar.\n");System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
@@ -602,53 +603,53 @@ break;
                  try{System.in.read();}
                  catch(Exception e){}
                          
-                System.out.println(nomejogador + "– Eu estou pronto para abrir um novo negócio!\n");
+                System.out.println(nomejogador + "... Eu estou pronto para abrir um novo negócio!\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                          
-                System.out.println("Chimbinha – Calma! Calma! meu rapaz, vamos ver o que aprendeu\n");
+                System.out.println("Chimbinha ... Calma! Calma! meu rapaz, vamos ver o que aprendeu\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                          
-                System.out.println(nomejogador + "– Claro!\n");
+                System.out.println(nomejogador + "... Claro!\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                          
-                System.out.println("Chimbinha – Antes de mais nada me liste o que já possui para este novo negócio\n");
+                System.out.println("Chimbinha ... Antes de mais nada me liste o que já possui para este novo negócio\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                          
-               System.out.println(nomejogador +" – Não entendi\n");
+               System.out.println(nomejogador +" ... Não entendi\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                          
-               System.out.println("Chimbinha – E ainda diz que está pronto para um novo negócio rsrssrs, quero que me diga se tem algum dinheiro ou local para abrir a sua forja\n");
+               System.out.println("Chimbinha ... E ainda diz que está pronto para um novo negócio rsrssrs, quero que me diga se tem algum dinheiro ou local para abrir a sua forja\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}     
                          
                          
-                System.out.println(nomejogador + " – Tenho um galpão para a fábrica há uma longa distância da cidade, alguns maquinários e formas para os moldes das espadas, um pequeno cômodo para a loja ao centro do vilarejo.");
+                System.out.println(nomejogador + " ... Tenho um galpão para a fábrica há uma longa distância da cidade, alguns maquinários e formas para os moldes das espadas, um pequeno cômodo para a loja ao centro do vilarejo.");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                          
-                System.out.println("Chimbinha – Certo, então irei te fazer algumas perguntas de testes, onde as únicas condições é que para cada acerto você mantém todos os seus bens, contudo se errar perderá um por vez, mas terá a chance de recuperar tudo ou não na pergunta final, e aí você topa?\n");
+                System.out.println("Chimbinha ... Certo, então irei te fazer algumas perguntas de testes, onde as únicas condições é que para cada acerto você mantém todos os seus bens, contudo se errar perderá um por vez, mas terá a chance de recuperar tudo ou não na pergunta final, e aí você topa?\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                          
-                System.out.println( nomejogador + " – Mas isso é hipoteticamente, não é?\n");
+                System.out.println( nomejogador + " ... Mas isso é hipoteticamente, não é?\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
-                 catch(Exception e){
+                 catch(Exception e){}
                          
-                System.out.println("Chimbinha – Mas é claro meu filho, a não ser que queira começar o negócio já falido!\n");
+                System.out.println("Chimbinha ... Mas é claro meu filho, a não ser que queira começar o negócio já falido!\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -658,13 +659,13 @@ break;
                  try{System.in.read();}
                  catch(Exception e){}
                          
-                System.out.println("Chimbinha – Vamos começar!");
+                System.out.println("Chimbinha ... Vamos começar!");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                          
          }
-         }
+         
     
     // criar uma função de bens materiais//
     //a ideia é que ele não tenha chances de voltar para acertar nas primeiras questões então errou perdeu algo
@@ -704,7 +705,7 @@ nomejogador errar
 (aparecer a msg que pena você errou! Você acabou de perder o cômodo para a loja, bom parece que você perdeu tudo!!) 
 Diálogo
 Chimbinha - Meu caro parece que os conceitos não ficaram muito claros para você, te farei uma pergunta bônus para tentarmos recuperar tudo, se errar precisará revisar os seus estudos e retornaremos ao questionário o que acha?
-nomejogador – É parece que me equivoquei, mas vamos lá para a pergunta bônus
+nomejogador ... É parece que me equivoquei, mas vamos lá para a pergunta bônus
  a pergunta abaixo só aparecerá se ele errar todas as 3 questões anteriores//**
 Chimbinha - As origens da Abordagem Clássica da Administração remontam às consequências geradas pela Revolução Industrial e podem ser resumidas em dois fatos genéricos: o crescimento acelerado e desorganizado das empresas e a necessidade de aumentar a eficiência e a competência das organizações. A Abordagem Clássica da Administração foi desdobrada em Administração Científica (Taylor) e Teoria Clássica (Fayol). Aponte a alternativa que indica a ênfase da Teoria Clássica.
 a)	Ênfase na estrutura.
@@ -722,12 +723,12 @@ nomejogador acertou
     
     static void taberna5(int walk){
             
-                System.out.println("Chimbinha – Realmente, você demonstrou conhecimento, meus parabéns.\n");
+                System.out.println("Chimbinha ... Realmente, você demonstrou conhecimento, meus parabéns.\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}   
             
-                System.out.println(" Chimbinha – Aqui, assine isso.\n");
+                System.out.println(" Chimbinha ... Aqui, assine isso.\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -737,7 +738,7 @@ nomejogador acertou
                  try{System.in.read();}
                  catch(Exception e){}
             
-                System.out.println(" Chimbinha – Partir de agora seremos sócios. Eu entro com o dinheiro e você irá administrar tudo, afinal você se demonstrou ser bem capaz. \n");
+                System.out.println(" Chimbinha ... Partir de agora seremos sócios. Eu entro com o dinheiro e você irá administrar tudo, afinal você se demonstrou ser bem capaz. \n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -766,7 +767,7 @@ nomejogador acertou
                 System.out.println("Você abre a porta e pouco tempo depois chega alguns clientes.\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
-                 catch(Exception e){
+                 catch(Exception e){}
                          
                 System.out.println(nomejogador  + " - Bem vindo a forja Chimbinha");
                  System.out.println("Aperte enter para seguir"); 
@@ -808,7 +809,7 @@ nomejogador acertou
                  try{System.in.read();}
                  catch(Exception e){}
                  
-                 System.out.println("Taberneiro – Olha só, faz tempo que não vejo um caçador de monstro por aqui, você esta todo bem equipado com essas poções e tem uma bela espada em suas consta, como se chama?\n");
+                 System.out.println("Taberneiro ... Olha só, faz tempo que não vejo um caçador de monstro por aqui, você esta todo bem equipado com essas poções e tem uma bela espada em suas consta, como se chama?\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -819,7 +820,7 @@ nomejogador acertou
                  catch(Exception e){}
                  
                  
-                 System.out.println(nomejogador + " – Me chamo " + nomejogador + " e sim, hoje em dia os números de caçadores estão cada vez menor, é uma profissão difícil.\n");
+                 System.out.println(nomejogador + " ... Me chamo " + nomejogador + " e sim, hoje em dia os números de caçadores estão cada vez menor, é uma profissão difícil.\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -834,7 +835,7 @@ nomejogador acertou
                  try{System.in.read();}
                  catch(Exception e){}
                  
-                 System.out.println("Taberneiro –   A sim, conheço o lugar e conheço o Jasquim hahaha.\n");
+                 System.out.println("Taberneiro ...   A sim, conheço o lugar e conheço o Jasquim hahaha.\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -844,17 +845,17 @@ nomejogador acertou
                  try{System.in.read();}
                  catch(Exception e){}
                  
-                 System.out.println("Taberneiro – Espero que esteja preparado para esse contrato jogador, pois Jasquim e pior que qualquer monstro que você já enfrentou, eu aposto haha.\n");
+                 System.out.println("Taberneiro ... Espero que esteja preparado para esse contrato jogador, pois Jasquim e pior que qualquer monstro que você já enfrentou, eu aposto haha.\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                  
-                 System.out.println(nomejogador + " – por quê? \n");
+                 System.out.println(nomejogador + " ... por quê? \n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                  
-                 System.out.println("Taberneiro – Digamos que ele e o tipo de pessoa que você não gostaria de começar a conversar, enfim tenho clientes para cuidar, se quiser ir para lá e só seguir esse caminho.\n");
+                 System.out.println("Taberneiro ... Digamos que ele e o tipo de pessoa que você não gostaria de começar a conversar, enfim tenho clientes para cuidar, se quiser ir para lá e só seguir esse caminho.\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -869,7 +870,7 @@ nomejogador acertou
                  try{System.in.read();}
                  catch(Exception e){}
          
-                 System.out.println(nomejogador + " – Olá eu vi o ...\n");
+                 System.out.println(nomejogador + " ... Olá eu vi o ...\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -889,7 +890,7 @@ nomejogador acertou
                  try{System.in.read();}
                  catch(Exception e){}
                  
-                 System.out.println("Jasquim – É tão bom ver um caçador por aqui, estou precisando muito me livrar das quelas aberrações, quando mais rápido for mais rápido irei ter meu negócio e serei rico hahaha!\n");
+                 System.out.println("Jasquim ... É tão bom ver um caçador por aqui, estou precisando muito me livrar das quelas aberrações, quando mais rápido for mais rápido irei ter meu negócio e serei rico hahaha!\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -900,7 +901,7 @@ nomejogador acertou
                  catch(Exception e){}
                  
 
-                 System.out.println("Jasquim – Não não, a casa fica mais no centro, é uma casa simples irei te levar lá\n");
+                 System.out.println("Jasquim ... Não não, a casa fica mais no centro, é uma casa simples irei te levar lá\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -915,7 +916,7 @@ nomejogador acertou
                  try{System.in.read();}
                  catch(Exception e){}
 
-                 System.out.println(" Jasquim – Aqui estamos, bonita não? Essa vai ser a mais famosa loja de poções dessa vila, pode apostar. É claro, se você conseguir eliminar esses seres que vivem assombrando o local \n");
+                 System.out.println(" Jasquim ... Aqui estamos, bonita não? Essa vai ser a mais famosa loja de poções dessa vila, pode apostar. É claro, se você conseguir eliminar esses seres que vivem assombrando o local \n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -930,7 +931,7 @@ nomejogador acertou
                  try{System.in.read();}
                  catch(Exception e){}
                  
-                 System.out.println("Jasquim – Eu e meus irmãos queremos abrir uma loja de poção aqui, estudamos muito para isso sabe, até vimos meios de administrar \n");
+                 System.out.println("Jasquim ... Eu e meus irmãos queremos abrir uma loja de poção aqui, estudamos muito para isso sabe, até vimos meios de administrar \n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -957,11 +958,12 @@ nomejogador acertou
      Caso acertar
      Continua a historia*/
                     
-    
+            }
     
    public static void main(String[] args) {
     int opcaomenu = menu();  
     controle (opcaomenu, opcaomenu);
    }
   }
+
 
