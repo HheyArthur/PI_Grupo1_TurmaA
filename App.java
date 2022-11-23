@@ -83,8 +83,10 @@ public static void caminhos (int opcaomenu) {
   } while (walk >= 3 || walk <= 0 ) ;
 validacoes(walk); // fazer a pergunta com a mesma logica
 }
+
+
 public static int questaoDois(int walk) {
-   Scanner entrada = new Scanner(System.in) {
+   Scanner entrada = new Scanner(System.in);
       String pergunta02;
       int resp02tb;
       ArrayList<String> alternativa = new ArrayList<String>();/* criação da lista */
@@ -100,13 +102,13 @@ public static int questaoDois(int walk) {
             + "\n1) " + alternativa.get(0) + "\n" + "2) " + alternativa.get(1) + "\n" + "3) " + alternativa.get(2)
             + "\n" + "4) " + alternativa.get(3)
             + "\n" + "5) " + alternativa.get(4);
-      System.out.println(pergunta05);
+      System.out.println(pergunta02);
       resp02tb = entrada.nextInt();
       switch (resp02tb) {
          case 1:
             if (alternativa.get(0).equals("Henri Fayol e Frederick Taylor")) {
                System.out.println("Parabéns! Você deve ter aprendido muito com esses autores");
-
+contaberna++;
             } else {
                System.out.println(
                      "Que pena você errou! Acho que pegou livro errado. Tem certeza que são esses os autores?");
@@ -150,14 +152,14 @@ public static int questaoDois(int walk) {
             break;
          default:
             System.out.println("Opção Inválida");
-      }
+      } return resp02tb;
    }
-}
+
 
 
 
 public static int questaoTres(int walk) {
-   try (Scanner entrada = new Scanner(System.in)) {
+   Scanner entrada = new Scanner(System.in); 
       String pergunta03;
       int resp03tb;
       ArrayList<String> alternativa = new ArrayList<String>();/* criação da lista */
@@ -169,8 +171,8 @@ public static int questaoTres(int walk) {
 
       Collections.shuffle(alternativa);// **embaralha as alternativas**//
 
-      pergunta03 = "\nVocê pega o livro e começa a ler, esse livro fala sobre CAPACITAÇÂO de um trabalhador. 
-      Qual teoria administrativa refere-se esse livro?:\n"
+      pergunta03 = "\n Você pega o livro e começa a ler, esse livro fala sobre CAPACITAÇÂO de um trabalhador. "
+      +" Qual teoria administrativa refere-se esse livro?:\n"
             + "\n1) " + alternativa.get(0) + "\n" + "2) " + alternativa.get(1) + "\n" + "3) " + alternativa.get(2)
             + "\n" + "4) " + alternativa.get(3)
             + "\n" + "5) " + alternativa.get(4);
@@ -180,11 +182,11 @@ public static int questaoTres(int walk) {
          case 1:
             if (alternativa.get(0).equals("Teoria Científica.")) {
                System.out.println("Parabéns! Parece que está treinando e capacitando bem seus funcionários");
-
+   contaberna++;
             } else {
                System.out.println(
-                     "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro. 
-                     Não conseguirá treinar ninguém assim!");
+                     "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro."
+                     + " Não conseguirá treinar ninguém assim!");
             }
             break;
          case 2:
@@ -193,8 +195,8 @@ public static int questaoTres(int walk) {
 
             } else {
                System.out.println(
-                  "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro. 
-                  Não conseguirá treinar ninguém assim!");
+                  "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro. "
+                  + " Não conseguirá treinar ninguém assim!");
             }
             break;
          case 3:
@@ -203,8 +205,8 @@ public static int questaoTres(int walk) {
 
             } else {
                System.out.println(
-                  "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro. 
-                  Não conseguirá treinar ninguém assim!");
+                  " Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro. "
+                  + " Não conseguirá treinar ninguém assim!");
             }
             break;
          case 4:
@@ -213,8 +215,8 @@ public static int questaoTres(int walk) {
 
             } else {
                System.out.println(
-                  "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro. 
-                  Não conseguirá treinar ninguém assim!");
+                  "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro."  
+                  + " Não conseguirá treinar ninguém assim!");
             }
             break;
          case 5:
@@ -223,15 +225,15 @@ public static int questaoTres(int walk) {
 
             } else {
                System.out.println(
-                  "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro. 
-                  Não conseguirá treinar ninguém assim!");
+                  "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro."
+                  + " Não conseguirá treinar ninguém assim!");
             }
             break;
          default:
             System.out.println("Opção Inválida");
-      }
+      } return resp03tb;
    }
-}
+
 
   
 public static int questaoQuatro(int walk) {
@@ -243,17 +245,14 @@ public static int questaoQuatro(int walk) {
      alternativa.add("Administração Científica"); // *resposta correta */
      alternativa.add("Administração Clássica");
 
-      //do {
-
+      
         Collections.shuffle(alternativa);// **embaralha as alternativas**//
 
         pergunta04tb = "\nQual teoria se concentrou em melhorar a eficiência de cada indivíduo dentro da organização?\n"
               + "\n1) " + alternativa.get(0) + "\n" + "2) " + alternativa.get(1);
         System.out.println(pergunta04tb);
         resp04tb = entrada.nextInt();
-        switch (resp04tb) {
-          //  case "a":
-          //  case "A":
+        switch (resp04tb) {         
           case 1:
               if (alternativa.get(0).equals("Administração Científica")) {
                  System.out.println("Parabéns! começou bem os negócios.");
@@ -264,8 +263,6 @@ public static int questaoQuatro(int walk) {
                   System.out.println("Que pena você errou! Acabou de perder as formas de molde de espadas");
               }
               break;
-          //  case "b":
-          //  case "B":
           case 2:
               if (alternativa.get(1).equals("Administração Científica")) {
                  System.out.println("Parabéns! começou bem os negócios.");
@@ -280,11 +277,12 @@ public static int questaoQuatro(int walk) {
             }      return resp04tb;
          }
 
-    //}   //tem que achar um jeito de conta com o while        } while (resp04tb <= 0 && resp04tb >= 3 );
+    
  
-public static String questaoCinco(int walk) {
+public static int questaoCinco(int walk) {
    Scanner entrada = new Scanner(System.in);
-     String pergunta05, resp05tb;
+     String pergunta05;
+   int resp05tb;
      boolean acertou05 = false;
      ArrayList<String> alternativa = new ArrayList<String>();/* criação da lista */
      alternativa.add("O líder deve ser arbitrário em suas decisões.");
@@ -293,20 +291,18 @@ public static String questaoCinco(int walk) {
      alternativa.add("As opiniões deverão ser ignoradas");
      alternativa.add("As responsabilidades devem ser delegadas.");
 
-     do {
-
+     
         Collections.shuffle(alternativa);// **embaralha as alternativas**//
 
         pergunta05 = "\nUma equipe alinhada e bem relacionada trará um ambiente de trabalho agradável e mais produtivo,"
               + " pensando nisso é correto afirmar que em relação ao bom desenvolvimento de toda a equipe:\n"
-              + "\na) " + alternativa.get(0) + "\n" + "b) " + alternativa.get(1) + "\n" + "c) " + alternativa.get(2)
-              + "\n" + "d) " + alternativa.get(3)
-              + "\n" + "e) " + alternativa.get(4);
+              + "\n1) " + alternativa.get(0) + "\n" + "2) " + alternativa.get(1) + "\n" + "3) " + alternativa.get(2)
+              + "\n" + "4) " + alternativa.get(3)
+              + "\n" + "5) " + alternativa.get(4);
         System.out.println(pergunta05);
-        resp05tb = entrada.next();
+        resp05tb = entrada.nextInt();
         switch (resp05tb) {
-           case "a":
-           case "A":
+           case 1:
               if (alternativa.get(0).equals("A equipe deve respeitar as divergências e diversidades.")) {
                  System.out.println("Parabéns! Parece que você está indo bem nos negócios");
                  acertou05 = true;
@@ -317,8 +313,7 @@ public static String questaoCinco(int walk) {
                        "Que pena você errou! Você acabou de perder o galpão, desse jeito vai se dá mal hein!");
               }
               break;
-           case "b":
-           case "B":
+           case 2:
               if (alternativa.get(1).equals("A equipe deve respeitar as divergências e diversidades.")) {
                  System.out.println("Parabéns! Parece que você está indo bem nos negócios");
                  acertou05 = true;
@@ -328,8 +323,7 @@ public static String questaoCinco(int walk) {
                        "Que pena você errou! Você acabou de perder o galpão, desse jeito vai se dá mal hein!");
               }
               break;
-           case "c":
-           case "C":
+           case 3:
               if (alternativa.get(2).equals("A equipe deve respeitar as divergências e diversidades.")) {
                  System.out.println("Parabéns! Parece que você está indo bem nos negócios");
                  acertou05 = true;
@@ -339,8 +333,7 @@ public static String questaoCinco(int walk) {
                        "Que pena você errou! Você acabou de perder o galpão, desse jeito vai se dá mal hein!");
               }
               break;
-           case "d":
-           case "D":
+           case 4:
               if (alternativa.get(3).equals("A equipe deve respeitar as divergências e diversidades.")) {
                  System.out.println("Parabéns! Parece que você está indo bem nos negócios");
                  acertou05 = true;
@@ -350,8 +343,8 @@ public static String questaoCinco(int walk) {
                        "Que pena você errou! Você acabou de perder o galpão, desse jeito vai se dá mal hein!");
               }
               break;
-           case "e":
-           case "E":
+           case 5:
+           
               if (alternativa.get(4).equals("A equipe deve respeitar as divergências e diversidades.")) {
                  System.out.println("Parabéns! Parece que você está indo bem nos negócios");
                  acertou05 = true;
@@ -364,13 +357,11 @@ public static String questaoCinco(int walk) {
            default:
               System.out.println("Opção Inválida");
         }
-
-     } while (!acertou05);
-   return resp05tb;
+       return resp05tb;
     }
 
     public static int questaoSeis(int walk) {
-      Scanner entrada = new Scanner(System.in) {
+      Scanner entrada = new Scanner(System.in);
          String pergunta06;
          int resp06tb;
          ArrayList<String> alternativa = new ArrayList<String>();/* criação da lista */
@@ -390,7 +381,7 @@ public static String questaoCinco(int walk) {
             case 1:
                if (alternativa.get(0).equals(" Produção em Massa.")) {
                   System.out.println("Parabéns! Parece que você está indo bem nos negócios");
-
+contaberna++;
                } else {
                   System.out.println(
                         "Que pena você errou! Você acabou de perder o cômodo para a loja, bom parece que você perdeu tudo!!");
@@ -425,13 +416,13 @@ public static String questaoCinco(int walk) {
                break;
             default:
                System.out.println("Opção Inválida");
-         }
-      }
+         } return contaberna;
+      } 
 
-   }
+   
 
    public static int questaoSete(int walk) {
-   Scanner entrada = new Scanner(System.in) {
+   Scanner entrada = new Scanner(System.in);
          String pergunta07;
          int resp07tb, tentativa = 0;
          boolean acertou07 = false;
@@ -490,7 +481,6 @@ public static String questaoCinco(int walk) {
                   tentativa = tentativa + 1;
 
             }
-
          } while (!acertou07 & tentativa < 3);
          if (acertou07) {
             System.out.println("Parabéns! Parece que você está indo bem nos negócios");
@@ -498,9 +488,10 @@ public static String questaoCinco(int walk) {
          } else {
             System.out.println(
                   "Que pena você perdeu tudo! Que tal revisarmos o conteúdo");
-         }
-      }
-   }
+         }return resp07tb;
+
+      } // pergunta para a denise
+   
 
 
 
@@ -557,8 +548,6 @@ public static String questaoCinco(int walk) {
       switch (opcaomenu) {
         case 1:
         caminhos(walk);
-        // validacoes(walk);
-
 
        
 break;
@@ -651,7 +640,6 @@ break;
                   catch(Exception e){}
    } /// ok
    
-   //fazer uma função que pergunta o nome do jogador 
    
       static void taberna1(int walk, String resp04tb) {
 
@@ -685,8 +673,13 @@ break;
                   System.out.println("Aperte enter para seguir"); 
                   try{System.in.read();}
                   catch(Exception e){}
-                  
+                  questaoDois(walk);
+                  questaoTres(walk);
                   questaoQuatro(walk);
+                  questaoCinco(walk);
+                  questaoSeis(walk);
+                  System.out.println(contaberna);
+                  questaoSete(walk);
 
                  // System.out.println( "... O que seria a teoria da administração");
 
