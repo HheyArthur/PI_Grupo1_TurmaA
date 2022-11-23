@@ -508,13 +508,13 @@ contaberna++;
     taberna5(walk);
    }
    if (walk == 2) {
-    System.out.println("x");
     casa0(walk);
-    // casa1(walk);
-    // casa2(walk);
-    // casa3(walk);
-    // casa4(walk);
-    // casa5(walk);
+    casa1(walk);
+    casa2(walk);
+    casa3(walk);
+    casa4(walk);
+    casa5(walk);
+    casa6(walk);
 
 
    } 
@@ -1053,9 +1053,7 @@ nomejogador acertou
           
                          
              
-    }
-
-            static void casa0 (int walk){
+    }  static void casa0 (int walk){
         
                  System.out.println("Era de noite, um homem montado a cavalo passava pela uma estrada cheia de nevoas, indo em direção a uma grande vila chamada Vila do Corvo\n");
                  System.out.println("Aperte enter para seguir"); 
@@ -1084,7 +1082,7 @@ nomejogador acertou
                  try{System.in.read();}
                  catch(Exception e){}
                  
-                 System.out.println("Taberneiro ... Olha só, faz tempo que não vejo um caçador de monstro por aqui, você esta todo bem equipado com essas poções e tem uma bela espada em suas consta, como se chama?\n");
+                 System.out.println("Taberneiro – Olha só, faz tempo que não vejo um caçador de monstro por aqui, você esta todo bem equipado com essas poções e tem uma bela espada em suas consta, como se chama?\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -1095,7 +1093,7 @@ nomejogador acertou
                  catch(Exception e){}
                  
                  
-                 System.out.println(nomejogador + " ... Me chamo " + nomejogador + " e sim, hoje em dia os números de caçadores estão cada vez menor, é uma profissão difícil.\n");
+                 System.out.println( nomejogador + " – Me chamo " + nomejogador + " e sim, hoje em dia os números de caçadores estão cada vez menor, é uma profissão difícil.\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -1110,7 +1108,7 @@ nomejogador acertou
                  try{System.in.read();}
                  catch(Exception e){}
                  
-                 System.out.println("Taberneiro ...   A sim, conheço o lugar e conheço o Jasquim hahaha.\n");
+                 System.out.println("Taberneiro –   A sim, conheço o lugar e conheço o Jasquim hahaha.\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -1120,17 +1118,17 @@ nomejogador acertou
                  try{System.in.read();}
                  catch(Exception e){}
                  
-                 System.out.println("Taberneiro ... Espero que esteja preparado para esse contrato jogador, pois Jasquim e pior que qualquer monstro que você já enfrentou, eu aposto haha.\n");
+                 System.out.println("Taberneiro – Espero que esteja preparado para esse contrato jogador, pois Jasquim e pior que qualquer monstro que você já enfrentou, eu aposto haha.\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                  
-                 System.out.println(nomejogador + " ... por quê? \n");
+                 System.out.println( nomejogador + " – por quê? \n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                  
-                 System.out.println("Taberneiro ... Digamos que ele e o tipo de pessoa que você não gostaria de começar a conversar, enfim tenho clientes para cuidar, se quiser ir para lá e só seguir esse caminho.\n");
+                 System.out.println("Taberneiro – Digamos que ele e o tipo de pessoa que você não gostaria de começar a conversar, enfim tenho clientes para cuidar, se quiser ir para lá e só seguir esse caminho.\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -1145,7 +1143,7 @@ nomejogador acertou
                  try{System.in.read();}
                  catch(Exception e){}
          
-                 System.out.println(nomejogador + " ... Olá eu vi o ...\n");
+                 System.out.println( nomejogador + " – Olá eu vi o ...\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -1165,18 +1163,18 @@ nomejogador acertou
                  try{System.in.read();}
                  catch(Exception e){}
                  
-                 System.out.println("Jasquim ... É tão bom ver um caçador por aqui, estou precisando muito me livrar das quelas aberrações, quando mais rápido for mais rápido irei ter meu negócio e serei rico hahaha!\n");
+                 System.out.println("Jasquim – É tão bom ver um caçador por aqui, estou precisando muito me livrar das quelas aberrações, quando mais rápido for mais rápido irei ter meu negócio e serei rico hahaha!\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                  
-                 System.out.println("Jogador - Seria aqui a casa onde estão as assombrações?\n");
+                 System.out.println( nomejogador + " - Seria aqui a casa onde estão as assombrações?\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
                  
 
-                 System.out.println("Jasquim ... Não não, a casa fica mais no centro, é uma casa simples irei te levar lá\n");
+                 System.out.println("Jasquim – Não não, a casa fica mais no centro, é uma casa simples irei te levar lá\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -1191,12 +1189,12 @@ nomejogador acertou
                  try{System.in.read();}
                  catch(Exception e){}
 
-                 System.out.println(" Jasquim ... Aqui estamos, bonita não? Essa vai ser a mais famosa loja de poções dessa vila, pode apostar. É claro, se você conseguir eliminar esses seres que vivem assombrando o local \n");
+                 System.out.println(" Jasquim – Aqui estamos, bonita não? Essa vai ser a mais famosa loja de poções dessa vila, pode apostar. É claro, se você conseguir eliminar esses seres que vivem assombrando o local \n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
 
-                 System.out.println("Jogador certo, irei entrar\n");
+                 System.out.println( nomejogador + " - certo, irei entrar\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -1206,12 +1204,12 @@ nomejogador acertou
                  try{System.in.read();}
                  catch(Exception e){}
                  
-                 System.out.println("Jasquim ... Eu e meus irmãos queremos abrir uma loja de poção aqui, estudamos muito para isso sabe, até vimos meios de administrar \n");
+                 System.out.println("Jasquim – Eu e meus irmãos queremos abrir uma loja de poção aqui, estudamos muito para isso sabe, até vimos meios de administrar \n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
 
-                 System.out.println("Jogador- legal, mas pode ser perigoso aqui, e melhor você ficar lá fora\n");
+                 System.out.println( nomejogador + " - legal, mas pode ser perigoso aqui, e melhor você ficar lá fora\n");
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
@@ -1220,11 +1218,11 @@ nomejogador acertou
                  System.out.println("Aperte enter para seguir"); 
                  try{System.in.read();}
                  catch(Exception e){}
-                    
-                    
-        /*  ((pergunta sobre oque e a teoria de adm.))
+               }
+        
+       /*  ((pergunta sobre oque e a teoria de adm.))
                  
-       Caso errar 
+     Caso errar 
      (aparecer uma mensagem falando que está errada e dá uma dica)
                  
      Caso errar 3 vezes 
@@ -1232,8 +1230,796 @@ nomejogador acertou
                  
      Caso acertar
      Continua a historia*/
-                    
-            }
+        
+        static void casa1(int walk){
+          System.out.println("Jasquim – Isso mesmo, até que um selvagem como você e bem esperto.");
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+          
+          System.out.println("Você apenas o ignora e segue em frente.");
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+          
+          System.out.println("Do nada um calafrio surge em seu corpo e você começa a ouvir o vento ficar mais forte \n");
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+          
+          System.out.println("Uma voz surge do além\n" +
+         "Voz desconhecida - Vocês não irão tomar oque é meu \n");
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+                  
+          System.out.println("Um fantasma aparece, com uma aparência de um homem velho, porém aterrorizante ele parte em sua direção para atacá-lo"
+                  + "  --                                                                          \n" +
+"                                                                                                                              ++                                                                        \n" +
+"                                                                                                                              MMMM                                                                      \n" +
+"                                                                                                                                ++..                                                                    \n" +
+"                                                                                                                        ....--....@@      ::++--                                                        \n" +
+"                                                                                                  ....                --++++++::::mmmm::--mm::mm--                                                      \n" +
+"                                                                                              --      mm              ::MM::::..MM++@@--@@++mm@@mm::..                                                  \n" +
+"                                                                                            ......--..++          ..::mmMM@@@@@@##mm@@mm::mmmmmmMMmm::..                                                \n" +
+"                                                                                ..          --    ::::mm----    ..::mmMM@@########MMMMMM@@##@@mm@@MMmm--                                                \n" +
+"                                                                                  --..    --..  ..::mmMMmm@@..  ++++@@##@@######################@@##@@mm--                                              \n" +
+"                                                                                  ..--..  --------++MMMM@@MM@@++mm++@@################################MM++                                              \n" +
+"                                                                              ..--::    ..mm::::++MM##@@@@@@MMMMMM####################################@@++--                                            \n" +
+"                                                                                    --::++mmMMMMMM@@####@@@@MM@@######################################@@++::                                            \n" +
+"                                                                                ..--::++MMmmmmMM@@MM######@@MM++@@######################################mmmm                                            \n" +
+"                                                                            --  --  ::++++::mmmm##########@@@@@@####################################MM@@++mm                                            \n" +
+"                                                                        ..      ......::mm++::::::######@@MMMM##@@##################################++@@MMMM                                            \n" +
+"                                                                      ..        ..--mm++##MM########@@@@##MMMM######################################..@@mm                                              \n" +
+"                                                                            ..  ..++MM##################mm##MM####@@############################MM##MM##mm                                              \n" +
+"                                                                            --  ++++##MM############@@@@####@@mm##..####  ################@@--..##MM##@@mm                                              \n" +
+"                                                                          ..  ::mm##################MM@@############MM##MM  ..MM##########  ..##@@mm##MM::                                              \n" +
+"                                                                            @@######################MM##########@@############MMmm##--##::##@@####::##@@                                                \n" +
+"                                                                        ..MM######@@################MM@@##############::##########MM  ##########::++MM                                                  \n" +
+"                                                                      --::######@@####################################@@::########..  MM####MM++::@@##                                                  \n" +
+"                                                                    ....mm############################################@@::::######--MMMM@@##  ..####::                                                  \n" +
+"                                                                  --  mm##############################MM####@@mm########@@  ..##MM######....  MM####..                                                  \n" +
+"                                                                    mmMM##############################mm##################mm::....mm  ::..  MM####mm                                                    \n" +
+"                                                                  ++################@@################::@@####################++          mm@@####++::                                                  \n" +
+"                                                                --mm##MM##############################++####@@##################....  ::@@######MMmmmm                                                  \n" +
+"                                                            ..--++##################################@@mm##@@MM##@@##MM##########################mmmmmm::                                                \n" +
+"                                                            ..MM####################################@@mm########@@##############################MMMM++MM                                                \n" +
+"                                                      --..::++MM####################################MM@@####MM############@@##############@@####@@@@mm++                                                \n" +
+"                                                ..::....mmMMMM####################MM################mm########++################################@@@@MM++mm                                              \n" +
+"                                              ::::----@@mm@@##############@@######++################MMMM################@@######################@@####MM--                                              \n" +
+"                                            ....  @@@@mmmm@@####################++mm@@##############@@############MM##################################mm::--                                            \n" +
+"                                            ..::mmMMMM++@@MM@@##################::####################################################################MM::mm                                            \n" +
+"                                    ..--++--::++MMMMMM##@@####################@@++####################@@############################################@@##mm::..                                          \n" +
+"                                    ::++::##MM####MM##########################@@MM######################################################################mm++mm                                          \n" +
+"                                ----@@++@@##mm--@@############################mmMM####################@@############################@@####################++mm::                                        \n" +
+"                            ....--::mm++####@@MM################################@@####@@##############@@##########################::@@@@##########@@########++++                                        \n" +
+"                        ........::MM::######@@####################################@@##@@################################@@####@@##  ..mm@@##@@##############mm++--                                      \n" +
+"                      ..  ::::--MMmm####MM############################################mm################################..    ##mmMM    MM##@@####@@##########++                                        \n" +
+"                          ::mm++mm####@@@@############################################mm################################      mm::MM    ++######################::                                      \n" +
+"                        ..++mm##@@####mm##############################@@MM############@@################################          MM++  MM##mm####################++                                    \n" +
+"                        ++MM##MM####@@################################mm@@############@@########@@####################MM          ..++  mm##MM################--@@--                                    \n" +
+"                      ::##mm######@@##################################@@##############mm##############################                mm::##MM####################MM                                    \n" +
+"                    --mmMM######MM##############::####################@@@@############++##############################                --..@@##@@################mm@@::                                  \n" +
+"                    ++MM######MMMM############@@######################MM@@############++############################..                    ####MMMM##########MM    ::..                                  \n" +
+"                  ..##@@####@@########################################################mm############MM##############                      mm##  @@##########mm++    ::                                  \n" +
+"                ..mm######@@##############@@##########################################++##############@@##########--                      ..MM  mm##########@@MM      ..                                \n" +
+"                ..@@@@@@@@@@############################################@@############mm@@####################MM@@                          ++..@@::##########mm      --                                \n" +
+"              --++##MM@@MM##############@@############################################++mm##################MM##@@                          --  ++############++..                                      \n" +
+"                MMMM::MMMM@@##########@@@@##################MM########################mm++##################@@@@mm..                              ##@@########++MM                                      \n" +
+"            ----mm::--::@@@@@@######@@MMMM@@################MM##########################MMMM++####################MMmm                            ##@@########@@mm                                      \n" +
+"            --++++  ----MMMM@@####@@@@mm@@MM################@@############################MMMM##################@@@@MMmm--                        @@::########MMmm                                      \n" +
+"            ..mmMM      ++MM@@@@@@@@@@mm--  ##@@############MM################################MM########################MMMM                      --mm@@######@@mm                                      \n" +
+"          ----mm        ++@@@@@@@@MMmm--  ..MM@@##@@########::##################################MM####################@@@@@@mm::                    ##@@########mm++                                    \n" +
+"          --::          ++MMMM@@MM--      ::::@@##@@########MM##::################################@@########################@@@@MM::--              ::++########mmMM                                    \n" +
+"        ..--::        ..mmmmMMmmmm      ::  mm@@##@@######@@@@@@mm####################################MM######################@@MMMMmmMMmm          ::--########@@MM..                                  \n" +
+"        ::          ....++mmMM++            MM@@@@@@################################################################################@@MMmmmmMM        ::mm######MMmm                                    \n" +
+"        --            --mmmmmm              MM@@##@@##########@@##########################################@@MM##############################@@@@mmmm..++MM########MMmm                                  \n" +
+"        ..--          ::mmmm--            mmMM@@@@########@@@@mm############################################@@MM##########################@@####mm--    mmMM######MMmm                                  \n" +
+"      --..            mmmmmm            ++mmMM@@@@##########@@MM################################################mm################@@##############MM::--mmMM######@@mm++::                              \n" +
+"      ..            --mmmmMM  ::        mm@@@@##################mm################@@############################MM####@@@@############################MM--##########mmmm--                              \n" +
+"      ..          ....mmmm..++::--  ..--mmMM######################################################################::@@@@##@@########@@MMmm######@@######@@##++######mmmmmm                              \n" +
+"      ..        ....mmmmmmmmmmmm++--mmMMMMMM######################@@################################################@@@@####MMMM####@@MM@@    --mm############::::##@@MM++mm                            \n" +
+"      ..        ..::++mmMMmmMMMMMMmmmmMM@@@@@@##################MM################@@################################MM++######@@########mmMM          ::##MM####MM##..mmMM::..                          \n" +
+"      --      ..  ++mmMMMM@@MMMM@@MM@@@@##@@################@@##@@####################################################MM############@@##MMMMMM            ..######@@@@++mmMM                            \n" +
+"      ::        ::++++MMMMMMMMMMMM@@@@####@@@@################@@@@####################################################################@@MMMMMMmm          --####@@####@@::mm++                          \n" +
+"      ++      ::--mmMMMMMM@@MMMM@@##@@####@@##################MM##########################################################################@@####..          ##############  --                          \n" +
+"    --++        ..++MMMM@@@@MM@@########################################################################################@@################MMmm@@##::        MM##############++                          \n" +
+"    ..        ..--mmMMMM@@@@MM##############################MM############################################################@@##############MMmm..  ++::    ::++################MM                        \n" +
+"    --        ....MMMM@@##@@@@########@@##@@##################@@##########################################################################@@mm++    --    ::++########@@########mm                      \n" +
+"    --    --....--MM@@@@@@@@########@@@@@@@@##############@@@@################################################################@@############MM::::        ::MM##########@@########::                    \n" +
+"    --    ------++MMMM@@MMMM##########@@@@##############MM####################################################################################++++      --  ########################MM                  \n" +
+"    ::    ----..MMMMMMmm@@@@##@@##  ..mm##########MM######mm######MM##########################++##########################mm####################mm::      ::####@@########MM##MM######++                \n" +
+"    ::    --..--mmmmmm  MM@@##MMmm    MM##########@@##@@mm##########MM##########################MM@@######################mmMMmm################@@++..    --##################@@@@##MM####              \n" +
+"        ::..::::mmmm    mmMM##      mm@@@@@@########::@@MM######::@@############################::  MM######################--::@@################@@++    ++##############--######MMMM@@##mm            \n" +
+"  ..    --..::++++mm    ++MM..      --MM##@@####mmmmMMMM@@##@@@@mm##############################MM--  ##mm@@MM@@##mm####@@MM##--mmMM##############MMmm    ++####@@########..@@####MM##mmMM@@--          \n" +
+"          ++++mm..    --++MM          MM@@##@@MMMM@@::MM##@@mm@@########++####################@@    mmMM  mm  @@++MM########MM##  ::MM############@@mmmm--##--############..@@  ##@@@@@@  MM++          \n" +
+"      ::  ::++mm      --MM          ..MMMM@@@@MMmm@@::MM@@mmMM######..########################mm..    ..--mm..  MM@@mm##@@@@MM@@..  --mm@@##########@@::..##mm############MM::  MMMM  ##    @@mm        \n" +
+"      ....::::++    ----            ::MMMM@@MM++MM::mmMMmm@@##MM####  ##++##################@@mm..    ..++  ++::mm    ##MMMMmm@@MM    --++@@##########++..##--########@@@@@@    mmmm  ##mm    MM::      \n" +
+"      ....++..++    ..              mm##@@@@MMmm++++++::MM##--@@MM@@::    @@@@############@@##MMmm            ::++    ##@@::MMmm@@      ::::@@########@@::    ##MM######@@      mm@@  ##mm    mmmm      \n" +
+"      --..++        --            ..mm@@mmMMmmmm::--##::####MM##MM##      --@@################@@++              ::    ::  @@  ::++++    ::++@@##########MM++  ##MM######MM        mm  ::MM      mm      \n" +
+"    ..--..mmmm                    ::mmMM  mm++++++::mmmm##@@@@mmmm++        mm@@##############@@mm              --    ..          MM--    ++mm############mm..  ######@@          @@    MM      ##      \n" +
+"    ..::..::..    ..                  MMmmmm++++mm  --++@@##  ..++..        ::@@@@##########@@@@mm                                @@::    --##############MM@@  ##MM##@@          @@..  ##..    ..++    \n" +
+"  ..  --..++      ..              mmMMMMmmmmmm++--  ++mmMMMM    mm          ::@@@@##############mm                                ++    ::MMMMmm##########@@@@  ######@@          ::    ##--      ##    \n" +
+"  ----  ..mm      ..            ++mmMMmmmmmm++mm..MM++mm  mm    MM            MM@@############@@@@                                      ++MMMM############MM##  ########          ....  --mm      ::    \n" +
+"      ----      ..              ++mm++mmmm++++::..::      mm    mm            ::@@##############MM            ..::                    ::##mm##@@############@@  @@@@MM##          ....    MM            \n" +
+"    ::----                    ::mmmm++mm  ++++  ..        --    ++            --mm##############@@::              ++  mmmm++++mmmm::mm##MM@@##############@@##  ########          ....    mm        ::  \n" +
+"    ----                        ++mm++..  ++..            ++                    ++##############@@@@                  mmMMMMMM@@mm@@MM@@@@##############MM++  MM####@@##          ..      ++        --  \n" +
+"    --::                    --  mmmm++  ++::              MM                    ++##############@@mm                    ..++    mm@@@@################@@mm    ########MM          ..      ..            \n" +
+"    --::                      ::++++mm  --..  mm          --                    MM@@##############MM                      ::  MMMM######################  --############                                \n" +
+"    ::++                      ::::++  ..      ..          --                    MM::##############MM::                    ++MM####@@################@@      ############                                \n" +
+"  ..::mm                    ++::::::  mm                                          ++##############MMmm        ..@@@@######@@####@@##################@@    --############                                \n" +
+"    ::++                    ::++mm    --                                          mm++############@@++                  ++MM##################@@@@@@        ############                                \n" +
+"    ::--                  ::::::    ::                                            mmmm############MMMM                ++MM::mm####@@##@@####@@@@@@##      mm######@@####                                \n" +
+"    ::                      ++++                                                  ++##MM############mm                --    ################mm##MMMM      ######MM######                                \n" +
+"    ::                      ::                                                  ++++++############MMmm            ##      @@############@@MM++..@@--    --####@@########--                              \n" +
+"    ++                  --::::                                                  ::::##@@##########mm--          ++##    @@@@MM@@########mm  MM##        ##########@@##@@@@                              \n" +
+"    ++                    ::++                                                ::--mm####@@########mm          @@####..--MM######@@####::  ....          --##########MMMM                                \n" +
+"    mm                    --::                                                mmmm##############MM++      --######mmMMmmMM@@######mm..                  mm@@####mm####mm                                \n" +
+"    ++                    ::..                                            ..@@@@################mm    ..++@@@@######mm########@@++                          ####mm####mmMM                              \n" +
+"  --++                  ----                                            ..    @@##############MMMM    ##mm@@##################--                          ##MM######@@MM##..                            \n" +
+"  --::                  ::--                                              MM--++##############mm@@    ::mm@@################::                            --++######++######                            \n" +
+"  ----                    --                                                mm##################MM    ++@@################..                                  ##..      ####MM                          \n" +
+"  ..--                    ::                                              @@##################@@mm      @@##############--                                    @@..        ####MMmm                      \n" +
+"    ::..                  ++                                            MM@@##################@@mm      ################                                      ..--        ++######@@MM                  \n" +
+"    ::                    ++                                          mmMM##################@@@@::      ################                                                      @@########mm              \n" +
+"    ::                    ::                                        @@MM##mm################@@@@++--    ################                                                        ..######@@@@--          \n" +
+"    ::..                  ++                                ##++@@######..##################@@MM++..    ################++                                                          @@######MM--        \n" +
+"    ::--                  ++                              --  ##..MM  ##MM####################MM::      ##################                                                              ##MM@@@@::      \n" +
+"    ::::                  ++                                ::..  mm  MM####################MMMM..    ::################++                                                                ####@@##::    \n" +
+"    mm++                                                    @@      --##@@@@MM##############++MM::    MM##################                                                                  ######@@..  \n" +
+"    ++++                                                  ++        ######..################MMMM::    ############----####..                                                                  ######@@  \n" +
+"    ::::                                                          @@@@@@MM@@############@@@@  ::      ############    @@@@mm                                                                  ++######  \n" +
+"    ::::                                                      @@##--  ::MM##############@@          @@##########mm      ##..                                                                  --######@@\n" +
+"    ..::                                                    MM          @@##MM##########mm  MM      ############        ::++                                                                  ..########\n" +
+"      ::--                                                              @@..mm##########            MM########                                                                                  ########\n" +
+"      ::--                                                            @@@@mm::MM##@@##@@            @@######MM                                                                                ..####MM##\n" +
+"      ::                                                              ::@@  MM@@######MM            ########                                                                                  ++####mm##\n" +
+"      ::                                                            ##mm    ++########..          mm######--                                                                                  ########mm\n" +
+"        --                                                        mm::++    MMmm####MM            MM######                                                                                    ######@@  \n" +
+"        --                                                        ..        mm####@@@@            ######                                                                                    ####@@##@@  \n" +
+"        --                                                      mm  ++    ++##MM####              @@##MM                                                                                  @@######@@    \n" +
+"        ..                                                    ::          mm########            MM####                                                                                  ######MM@@      \n" +
+"          ++                                                ..            ######@@##            @@####                                                                                ######@@@@        \n" +
+"          --..                                                          mm@@######mm          --####                                                                    --      ..++##MM##@@..          \n" +
+"            ::                                                    @@##@@########@@            @@####                                                                        @@MM@@MMmm@@                \n" +
+"              ..                                                ..::##############            MM@@                                                                          --                          \n" +
+"                                                              ..MM##############mm            ##                                                                                                        \n" +
+"                                                            ##mmMM##############            MMMM                                                                                                        \n" +
+"                                                            mmmm################            ##                                                                                                          \n" +
+"                                                            MMMM@@##############          @@                                                                                                            \n" +
+"                                                            ##@@################          ..                                                                                                            \n" +
+"                                                              ################@@                                                                                                                        \n" +
+"                                                              ##MM##############                                                                                                                        \n" +
+"                                                              ##MM################..                                                                                                                    \n" +
+"                                                              ##MM################  ..                                                                                                                  \n" +
+"                                                              ##mm################mm                                                                                                                    \n" +
+"                                                              ++@@##########@@++@@MM                                                                                                                    \n" +
+"                                                              ::############--    MM                                                                                                                    \n" +
+"                                                              ..############::                                                                                                                          \n" +
+"                                                                ############--      mm                                                                                                                  \n" +
+"                                                                ############MM                                                                                                                          \n" +
+"                                                              ::##@@##########                                                                                                                          \n" +
+"                                                              ++MM##########@@                                                                                                                          \n" +
+"                                                              ::MMMMMM########@@::                                                                                                                      \n" +
+"                                                              ++MMMMmm##############                                                                                                                    \n" +
+"                                                        ..--::++MM##MMmmmm####@@####mmMMmm::..::::::----....                                                                                            \n" +
+"                    ..--++++++++++++++::++++++++++MMmmMMmm++++::++++@@@@@@@@MMmmmmMMMMmm++mmMMmmMM@@@@MM++++::..                                                                                        \n" +
+"                  --++++mmmmMMMMMMmmmmMMmm++++MMmm@@++::--::mmMM::@@++MMmm@@@@MM@@MM@@MMMMMMmmMMMM##@@MM@@MMMMMMMMMMMMMMMMmmmmmmmmmm++++::--..        \n"
+                  + "");
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+      }
+        
+        // Sistema de combate
+//O jogador irá jogar um d10(dado de 10 lados) caso o valor for maior que 5 ele defende e contra-ataca
+//Caso o valor for menor que 5 ele toma 5 de dano, 
+//Ele tem que contra-atacar duas vezes, ou seja, tirar duas vezes no dado um número maior que 5
+//Caso ele morra
+//Você sofreu muito dano pelo fantasma, sem força você larga a espada no chão e cai sobre os pés do Jasquim, infelizmente esse é o seu infeliz fim. Fim de jogo.
+//Caso ele contra-ataca 2 vezes segue a história.
+        
+        static void casa2(int walk){
+          
+          System.out.println("Você o ataca com sua espada e ele somem, você sabe que ele ainda está pela casa \n ");
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+          
+          System.out.println("Jasquim – Isso aí, agora finalmente irei poder tomar conta desse lugar.\n"); 
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+          
+          System.out.println( nomejogador + " – Ainda não, ele não se foi, ele parece estar ligado a essa casa, precisamos encontrar oque o prende aqui, quem era o antigo morador desse lugar?\n"); 
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+          
+          System.out.println("Jasquim – Então, essa casa era uma loja antiga de itens mágicos, o antigo dono era um velho muito chato, quando éramos crianças eu e meus irmos víamos aqui espiar as coisas estranha que ele vendia, porém em um certo dia ele desapareceu e nunca mais vimos eles.\n");
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+          
+          System.out.println( nomejogador + " – Hum.\n");
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+          
+          System.out.println("Jasquim – Vamos terminar com isso logo, tenho muitos currículos ainda para vê, se a gente terminar com isso erei precisa de uma balconista e alguém de segurança, caso você canse dessa vida de monstro pode trabalhar para min.\n");
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+          
+          System.out.println( nomejogador + " – hum.\n");
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+          
+          System.out.println("Vocês continuam andando em direção ao fundo da casa, você tenta observar cada canto para ver se acha algo que possa ajudar a sumir com o espírito.\n");
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+          
+          System.out.println( nomejogador + " – Tem duas belas damas que estou pensando em contratar,\n");
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+          
+          System.out.println( nomejogador + " – hummm.\n");
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+          
+          System.out.println("Jasquim – Elas são belas, será muito bom ter alguém assim para a minha loja de poções, porém ainda terei que ver os currículos delas, sabe quais são as informações mais importantes em um currículo?");
+          System.out.println("Aperte enter para seguir"); 
+          try{System.in.read();}
+          catch(Exception e){}
+      }
+        //((pergunta sobre currículo))
+//Das 4 informações e o jogador deve escolher a opção verdadeira exemplo
+//Nu currículo deve ter nome, cidade, objetivo, trabalhos anteriores. Isso seria verdade
+//Agora falso ex; nome, sexo, nome do pai, comida preferida ....
+//
+//Caso errar 
+//(aparecer uma mensagem falando que está errada e dá uma dica)
+//Caso errar 3 vezes 
+//(aparecer isso; você não soube responder, fico de saco cheio de ouvir sobre isso e decide ir embora fim de jogo, voltar ao menu)
+//Caso acertar
+        static void casa3(int walk){ 
+         
+         System.out.println("Jasquim – Isso mesmo, mas acho que vou escolher a Cary, ela é mais bonita.\n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+         System.out.println("De repente um vento ocorre dentro da casa, e o espírito aparece novamente  \n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+         System.out.println(" Fantasmas - Vocês não tomar essa casa de min AAAHHH.\n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+                 
+         System.out.println("Novamente ele parte para cima de você \n "
+                 + "  --                                                                          \n" +
+"                                                                                                                              ++                                                                        \n" +
+"                                                                                                                              MMMM                                                                      \n" +
+"                                                                                                                                ++..                                                                    \n" +
+"                                                                                                                        ....--....@@      ::++--                                                        \n" +
+"                                                                                                  ....                --++++++::::mmmm::--mm::mm--                                                      \n" +
+"                                                                                              --      mm              ::MM::::..MM++@@--@@++mm@@mm::..                                                  \n" +
+"                                                                                            ......--..++          ..::mmMM@@@@@@##mm@@mm::mmmmmmMMmm::..                                                \n" +
+"                                                                                ..          --    ::::mm----    ..::mmMM@@########MMMMMM@@##@@mm@@MMmm--                                                \n" +
+"                                                                                  --..    --..  ..::mmMMmm@@..  ++++@@##@@######################@@##@@mm--                                              \n" +
+"                                                                                  ..--..  --------++MMMM@@MM@@++mm++@@################################MM++                                              \n" +
+"                                                                              ..--::    ..mm::::++MM##@@@@@@MMMMMM####################################@@++--                                            \n" +
+"                                                                                    --::++mmMMMMMM@@####@@@@MM@@######################################@@++::                                            \n" +
+"                                                                                ..--::++MMmmmmMM@@MM######@@MM++@@######################################mmmm                                            \n" +
+"                                                                            --  --  ::++++::mmmm##########@@@@@@####################################MM@@++mm                                            \n" +
+"                                                                        ..      ......::mm++::::::######@@MMMM##@@##################################++@@MMMM                                            \n" +
+"                                                                      ..        ..--mm++##MM########@@@@##MMMM######################################..@@mm                                              \n" +
+"                                                                            ..  ..++MM##################mm##MM####@@############################MM##MM##mm                                              \n" +
+"                                                                            --  ++++##MM############@@@@####@@mm##..####  ################@@--..##MM##@@mm                                              \n" +
+"                                                                          ..  ::mm##################MM@@############MM##MM  ..MM##########  ..##@@mm##MM::                                              \n" +
+"                                                                            @@######################MM##########@@############MMmm##--##::##@@####::##@@                                                \n" +
+"                                                                        ..MM######@@################MM@@##############::##########MM  ##########::++MM                                                  \n" +
+"                                                                      --::######@@####################################@@::########..  MM####MM++::@@##                                                  \n" +
+"                                                                    ....mm############################################@@::::######--MMMM@@##  ..####::                                                  \n" +
+"                                                                  --  mm##############################MM####@@mm########@@  ..##MM######....  MM####..                                                  \n" +
+"                                                                    mmMM##############################mm##################mm::....mm  ::..  MM####mm                                                    \n" +
+"                                                                  ++################@@################::@@####################++          mm@@####++::                                                  \n" +
+"                                                                --mm##MM##############################++####@@##################....  ::@@######MMmmmm                                                  \n" +
+"                                                            ..--++##################################@@mm##@@MM##@@##MM##########################mmmmmm::                                                \n" +
+"                                                            ..MM####################################@@mm########@@##############################MMMM++MM                                                \n" +
+"                                                      --..::++MM####################################MM@@####MM############@@##############@@####@@@@mm++                                                \n" +
+"                                                ..::....mmMMMM####################MM################mm########++################################@@@@MM++mm                                              \n" +
+"                                              ::::----@@mm@@##############@@######++################MMMM################@@######################@@####MM--                                              \n" +
+"                                            ....  @@@@mmmm@@####################++mm@@##############@@############MM##################################mm::--                                            \n" +
+"                                            ..::mmMMMM++@@MM@@##################::####################################################################MM::mm                                            \n" +
+"                                    ..--++--::++MMMMMM##@@####################@@++####################@@############################################@@##mm::..                                          \n" +
+"                                    ::++::##MM####MM##########################@@MM######################################################################mm++mm                                          \n" +
+"                                ----@@++@@##mm--@@############################mmMM####################@@############################@@####################++mm::                                        \n" +
+"                            ....--::mm++####@@MM################################@@####@@##############@@##########################::@@@@##########@@########++++                                        \n" +
+"                        ........::MM::######@@####################################@@##@@################################@@####@@##  ..mm@@##@@##############mm++--                                      \n" +
+"                      ..  ::::--MMmm####MM############################################mm################################..    ##mmMM    MM##@@####@@##########++                                        \n" +
+"                          ::mm++mm####@@@@############################################mm################################      mm::MM    ++######################::                                      \n" +
+"                        ..++mm##@@####mm##############################@@MM############@@################################          MM++  MM##mm####################++                                    \n" +
+"                        ++MM##MM####@@################################mm@@############@@########@@####################MM          ..++  mm##MM################--@@--                                    \n" +
+"                      ::##mm######@@##################################@@##############mm##############################                mm::##MM####################MM                                    \n" +
+"                    --mmMM######MM##############::####################@@@@############++##############################                --..@@##@@################mm@@::                                  \n" +
+"                    ++MM######MMMM############@@######################MM@@############++############################..                    ####MMMM##########MM    ::..                                  \n" +
+"                  ..##@@####@@########################################################mm############MM##############                      mm##  @@##########mm++    ::                                  \n" +
+"                ..mm######@@##############@@##########################################++##############@@##########--                      ..MM  mm##########@@MM      ..                                \n" +
+"                ..@@@@@@@@@@############################################@@############mm@@####################MM@@                          ++..@@::##########mm      --                                \n" +
+"              --++##MM@@MM##############@@############################################++mm##################MM##@@                          --  ++############++..                                      \n" +
+"                MMMM::MMMM@@##########@@@@##################MM########################mm++##################@@@@mm..                              ##@@########++MM                                      \n" +
+"            ----mm::--::@@@@@@######@@MMMM@@################MM##########################MMMM++####################MMmm                            ##@@########@@mm                                      \n" +
+"            --++++  ----MMMM@@####@@@@mm@@MM################@@############################MMMM##################@@@@MMmm--                        @@::########MMmm                                      \n" +
+"            ..mmMM      ++MM@@@@@@@@@@mm--  ##@@############MM################################MM########################MMMM                      --mm@@######@@mm                                      \n" +
+"          ----mm        ++@@@@@@@@MMmm--  ..MM@@##@@########::##################################MM####################@@@@@@mm::                    ##@@########mm++                                    \n" +
+"          --::          ++MMMM@@MM--      ::::@@##@@########MM##::################################@@########################@@@@MM::--              ::++########mmMM                                    \n" +
+"        ..--::        ..mmmmMMmmmm      ::  mm@@##@@######@@@@@@mm####################################MM######################@@MMMMmmMMmm          ::--########@@MM..                                  \n" +
+"        ::          ....++mmMM++            MM@@@@@@################################################################################@@MMmmmmMM        ::mm######MMmm                                    \n" +
+"        --            --mmmmmm              MM@@##@@##########@@##########################################@@MM##############################@@@@mmmm..++MM########MMmm                                  \n" +
+"        ..--          ::mmmm--            mmMM@@@@########@@@@mm############################################@@MM##########################@@####mm--    mmMM######MMmm                                  \n" +
+"      --..            mmmmmm            ++mmMM@@@@##########@@MM################################################mm################@@##############MM::--mmMM######@@mm++::                              \n" +
+"      ..            --mmmmMM  ::        mm@@@@##################mm################@@############################MM####@@@@############################MM--##########mmmm--                              \n" +
+"      ..          ....mmmm..++::--  ..--mmMM######################################################################::@@@@##@@########@@MMmm######@@######@@##++######mmmmmm                              \n" +
+"      ..        ....mmmmmmmmmmmm++--mmMMMMMM######################@@################################################@@@@####MMMM####@@MM@@    --mm############::::##@@MM++mm                            \n" +
+"      ..        ..::++mmMMmmMMMMMMmmmmMM@@@@@@##################MM################@@################################MM++######@@########mmMM          ::##MM####MM##..mmMM::..                          \n" +
+"      --      ..  ++mmMMMM@@MMMM@@MM@@@@##@@################@@##@@####################################################MM############@@##MMMMMM            ..######@@@@++mmMM                            \n" +
+"      ::        ::++++MMMMMMMMMMMM@@@@####@@@@################@@@@####################################################################@@MMMMMMmm          --####@@####@@::mm++                          \n" +
+"      ++      ::--mmMMMMMM@@MMMM@@##@@####@@##################MM##########################################################################@@####..          ##############  --                          \n" +
+"    --++        ..++MMMM@@@@MM@@########################################################################################@@################MMmm@@##::        MM##############++                          \n" +
+"    ..        ..--mmMMMM@@@@MM##############################MM############################################################@@##############MMmm..  ++::    ::++################MM                        \n" +
+"    --        ....MMMM@@##@@@@########@@##@@##################@@##########################################################################@@mm++    --    ::++########@@########mm                      \n" +
+"    --    --....--MM@@@@@@@@########@@@@@@@@##############@@@@################################################################@@############MM::::        ::MM##########@@########::                    \n" +
+"    --    ------++MMMM@@MMMM##########@@@@##############MM####################################################################################++++      --  ########################MM                  \n" +
+"    ::    ----..MMMMMMmm@@@@##@@##  ..mm##########MM######mm######MM##########################++##########################mm####################mm::      ::####@@########MM##MM######++                \n" +
+"    ::    --..--mmmmmm  MM@@##MMmm    MM##########@@##@@mm##########MM##########################MM@@######################mmMMmm################@@++..    --##################@@@@##MM####              \n" +
+"        ::..::::mmmm    mmMM##      mm@@@@@@########::@@MM######::@@############################::  MM######################--::@@################@@++    ++##############--######MMMM@@##mm            \n" +
+"  ..    --..::++++mm    ++MM..      --MM##@@####mmmmMMMM@@##@@@@mm##############################MM--  ##mm@@MM@@##mm####@@MM##--mmMM##############MMmm    ++####@@########..@@####MM##mmMM@@--          \n" +
+"          ++++mm..    --++MM          MM@@##@@MMMM@@::MM##@@mm@@########++####################@@    mmMM  mm  @@++MM########MM##  ::MM############@@mmmm--##--############..@@  ##@@@@@@  MM++          \n" +
+"      ::  ::++mm      --MM          ..MMMM@@@@MMmm@@::MM@@mmMM######..########################mm..    ..--mm..  MM@@mm##@@@@MM@@..  --mm@@##########@@::..##mm############MM::  MMMM  ##    @@mm        \n" +
+"      ....::::++    ----            ::MMMM@@MM++MM::mmMMmm@@##MM####  ##++##################@@mm..    ..++  ++::mm    ##MMMMmm@@MM    --++@@##########++..##--########@@@@@@    mmmm  ##mm    MM::      \n" +
+"      ....++..++    ..              mm##@@@@MMmm++++++::MM##--@@MM@@::    @@@@############@@##MMmm            ::++    ##@@::MMmm@@      ::::@@########@@::    ##MM######@@      mm@@  ##mm    mmmm      \n" +
+"      --..++        --            ..mm@@mmMMmmmm::--##::####MM##MM##      --@@################@@++              ::    ::  @@  ::++++    ::++@@##########MM++  ##MM######MM        mm  ::MM      mm      \n" +
+"    ..--..mmmm                    ::mmMM  mm++++++::mmmm##@@@@mmmm++        mm@@##############@@mm              --    ..          MM--    ++mm############mm..  ######@@          @@    MM      ##      \n" +
+"    ..::..::..    ..                  MMmmmm++++mm  --++@@##  ..++..        ::@@@@##########@@@@mm                                @@::    --##############MM@@  ##MM##@@          @@..  ##..    ..++    \n" +
+"  ..  --..++      ..              mmMMMMmmmmmm++--  ++mmMMMM    mm          ::@@@@##############mm                                ++    ::MMMMmm##########@@@@  ######@@          ::    ##--      ##    \n" +
+"  ----  ..mm      ..            ++mmMMmmmmmm++mm..MM++mm  mm    MM            MM@@############@@@@                                      ++MMMM############MM##  ########          ....  --mm      ::    \n" +
+"      ----      ..              ++mm++mmmm++++::..::      mm    mm            ::@@##############MM            ..::                    ::##mm##@@############@@  @@@@MM##          ....    MM            \n" +
+"    ::----                    ::mmmm++mm  ++++  ..        --    ++            --mm##############@@::              ++  mmmm++++mmmm::mm##MM@@##############@@##  ########          ....    mm        ::  \n" +
+"    ----                        ++mm++..  ++..            ++                    ++##############@@@@                  mmMMMMMM@@mm@@MM@@@@##############MM++  MM####@@##          ..      ++        --  \n" +
+"    --::                    --  mmmm++  ++::              MM                    ++##############@@mm                    ..++    mm@@@@################@@mm    ########MM          ..      ..            \n" +
+"    --::                      ::++++mm  --..  mm          --                    MM@@##############MM                      ::  MMMM######################  --############                                \n" +
+"    ::++                      ::::++  ..      ..          --                    MM::##############MM::                    ++MM####@@################@@      ############                                \n" +
+"  ..::mm                    ++::::::  mm                                          ++##############MMmm        ..@@@@######@@####@@##################@@    --############                                \n" +
+"    ::++                    ::++mm    --                                          mm++############@@++                  ++MM##################@@@@@@        ############                                \n" +
+"    ::--                  ::::::    ::                                            mmmm############MMMM                ++MM::mm####@@##@@####@@@@@@##      mm######@@####                                \n" +
+"    ::                      ++++                                                  ++##MM############mm                --    ################mm##MMMM      ######MM######                                \n" +
+"    ::                      ::                                                  ++++++############MMmm            ##      @@############@@MM++..@@--    --####@@########--                              \n" +
+"    ++                  --::::                                                  ::::##@@##########mm--          ++##    @@@@MM@@########mm  MM##        ##########@@##@@@@                              \n" +
+"    ++                    ::++                                                ::--mm####@@########mm          @@####..--MM######@@####::  ....          --##########MMMM                                \n" +
+"    mm                    --::                                                mmmm##############MM++      --######mmMMmmMM@@######mm..                  mm@@####mm####mm                                \n" +
+"    ++                    ::..                                            ..@@@@################mm    ..++@@@@######mm########@@++                          ####mm####mmMM                              \n" +
+"  --++                  ----                                            ..    @@##############MMMM    ##mm@@##################--                          ##MM######@@MM##..                            \n" +
+"  --::                  ::--                                              MM--++##############mm@@    ::mm@@################::                            --++######++######                            \n" +
+"  ----                    --                                                mm##################MM    ++@@################..                                  ##..      ####MM                          \n" +
+"  ..--                    ::                                              @@##################@@mm      @@##############--                                    @@..        ####MMmm                      \n" +
+"    ::..                  ++                                            MM@@##################@@mm      ################                                      ..--        ++######@@MM                  \n" +
+"    ::                    ++                                          mmMM##################@@@@::      ################                                                      @@########mm              \n" +
+"    ::                    ::                                        @@MM##mm################@@@@++--    ################                                                        ..######@@@@--          \n" +
+"    ::..                  ++                                ##++@@######..##################@@MM++..    ################++                                                          @@######MM--        \n" +
+"    ::--                  ++                              --  ##..MM  ##MM####################MM::      ##################                                                              ##MM@@@@::      \n" +
+"    ::::                  ++                                ::..  mm  MM####################MMMM..    ::################++                                                                ####@@##::    \n" +
+"    mm++                                                    @@      --##@@@@MM##############++MM::    MM##################                                                                  ######@@..  \n" +
+"    ++++                                                  ++        ######..################MMMM::    ############----####..                                                                  ######@@  \n" +
+"    ::::                                                          @@@@@@MM@@############@@@@  ::      ############    @@@@mm                                                                  ++######  \n" +
+"    ::::                                                      @@##--  ::MM##############@@          @@##########mm      ##..                                                                  --######@@\n" +
+"    ..::                                                    MM          @@##MM##########mm  MM      ############        ::++                                                                  ..########\n" +
+"      ::--                                                              @@..mm##########            MM########                                                                                  ########\n" +
+"      ::--                                                            @@@@mm::MM##@@##@@            @@######MM                                                                                ..####MM##\n" +
+"      ::                                                              ::@@  MM@@######MM            ########                                                                                  ++####mm##\n" +
+"      ::                                                            ##mm    ++########..          mm######--                                                                                  ########mm\n" +
+"        --                                                        mm::++    MMmm####MM            MM######                                                                                    ######@@  \n" +
+"        --                                                        ..        mm####@@@@            ######                                                                                    ####@@##@@  \n" +
+"        --                                                      mm  ++    ++##MM####              @@##MM                                                                                  @@######@@    \n" +
+"        ..                                                    ::          mm########            MM####                                                                                  ######MM@@      \n" +
+"          ++                                                ..            ######@@##            @@####                                                                                ######@@@@        \n" +
+"          --..                                                          mm@@######mm          --####                                                                    --      ..++##MM##@@..          \n" +
+"            ::                                                    @@##@@########@@            @@####                                                                        @@MM@@MMmm@@                \n" +
+"              ..                                                ..::##############            MM@@                                                                          --                          \n" +
+"                                                              ..MM##############mm            ##                                                                                                        \n" +
+"                                                            ##mmMM##############            MMMM                                                                                                        \n" +
+"                                                            mmmm################            ##                                                                                                          \n" +
+"                                                            MMMM@@##############          @@                                                                                                            \n" +
+"                                                            ##@@################          ..                                                                                                            \n" +
+"                                                              ################@@                                                                                                                        \n" +
+"                                                              ##MM##############                                                                                                                        \n" +
+"                                                              ##MM################..                                                                                                                    \n" +
+"                                                              ##MM################  ..                                                                                                                  \n" +
+"                                                              ##mm################mm                                                                                                                    \n" +
+"                                                              ++@@##########@@++@@MM                                                                                                                    \n" +
+"                                                              ::############--    MM                                                                                                                    \n" +
+"                                                              ..############::                                                                                                                          \n" +
+"                                                                ############--      mm                                                                                                                  \n" +
+"                                                                ############MM                                                                                                                          \n" +
+"                                                              ::##@@##########                                                                                                                          \n" +
+"                                                              ++MM##########@@                                                                                                                          \n" +
+"                                                              ::MMMMMM########@@::                                                                                                                      \n" +
+"                                                              ++MMMMmm##############                                                                                                                    \n" +
+"                                                        ..--::++MM##MMmmmm####@@####mmMMmm::..::::::----....                                                                                            \n" +
+"                    ..--++++++++++++++::++++++++++MMmmMMmm++++::++++@@@@@@@@MMmmmmMMMMmm++mmMMmmMM@@@@MM++++::..                                                                                        \n" +
+"                  --++++mmmmMMMMMMmmmmMMmm++++MMmm@@++::--::mmMM::@@++MMmm@@@@MM@@MM@@MMMMMMmmMMMM##@@MM@@MMMMMMMMMMMMMMMMmmmmmmmmmm++++::--..        \n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+     }
+        
+        //     Sistema de combate
+//O jogador irá jogar um d10(dado de 10 lados) caso o valor for maior que 5 ele defende e contra-ataca
+//Caso o valor for menor que 5 ele toma 5 de dano, 
+//Ele tem que contra-atacar duas vezes, ou seja, tirar duas vezes no dado um número maior que 5
+//Caso ele morra
+//Você sofreu muito dano pelo fantasma, sem força você larga a espada no chão e cai sobre os pés do Jasquim, infelizmente esse é o seu infeliz fim. Fim de jogo.
+//Caso ele contra-ataca 2 vezes segue a história.
+        
+     static void casa4(int walk){ 
+          
+         System.out.println("E mais uma vez ele e derrotado, porém você sente que ele não sumiu de novo\n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+          
+         System.out.println( nomejogador + " – Deve te algo o prendendo aqui, vamos procurar qualquer coisa que pode estar ligado a ele \n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+        
+         System.out.println(" Passa alguns minutos e vocês acham uma espécie de escritório e lá dento está tudo bagunçado e ainda resta vários livros e papeis pelo chão \n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+         System.out.println("Jasquim – Olha herói Jogador, uma carta.\n" );
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+         System.out.println(" Você pega o a carta e começa a ler.\n" );
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+         System.out.println(" Eu sei que tenho que pagar para eles, porém não vou da um tostão meu, vou me esconder por um tempo e eles vão parar de me seguir uma hora ou outra, quando você ler esse bilhete peço que me encontre no esconderijo, você sabe que para vim para cá deve achar aquilo que fala sobre; \n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+         System.out.println(" Existem várias porem duas são as principais para me achar, siga as teorias  principais \n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+         System.out.println("Jasquim – Oque será que isso quer dizer\n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+         System.out.println(" Você pelo chão vários livros, alguns de histórias e outros didáticos.\n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+         System.out.println( nomejogador +" – Acho que eu sei.\n" );
+          System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+         System.out.println(" Você tenta procurar nos montes dos livros algo que tenha relação sobre a informação obtida na carta, seguindo oque ela diz, qual  seria o livro que você deve achar a resposta ");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+          
+      }
+        
+        //(((PERGUNTA SOBRE QUAL ADM ESTÁ SE REFERINDO A CARTA)))
+//A CARTA SE REFERE A ADM CLASSICA  E CIENTIFICA 
+//Caso errar 
+//(aparecer uma mensagem falando que está errada e dá uma dica)
+//Caso errar 3 vezes 
+//(aparecer isso; você não soube responder, fico de saco cheio de ouvir sobre isso e decide ir embora fim de jogo, voltar ao menu)
+//Caso acertar
+//Continua a histora 
+        
+        static void casa5(int walk){ 
+   
+         System.out.println("Você olha para frente e ver uma estante com alguns livros, você tira o livro que fala sobre ADM Clássica e Cientifica e ouve um som, ao olha para traz o piso se abre e revela uma passagem ao subsolo  \n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+         System.out.println( nomejogador + " – Acho que estamos quase acabando \n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+         System.out.println("Jasquim – Espero \n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+        
+         System.out.println("Ao descer a escadas vocês veem em uma cama um cadáver.\n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+         System.out.println( nomejogador +" -  achei, esse deve ser o corpo do espírito que assombra essa casa, devo queimá-lo o quanto antes, e só assim ele estará livre\n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+         System.out.println(" Quando você se aproxima o espírito aparece mais uma vez\n" );
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+         System.out.println(" Espírito – Não!!\n" );
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+
+         System.out.println(" Ele parte para cima de você mais uma vez\n"
+                 + "  --                                                                          \n" +
+"                                                                                                                              ++                                                                        \n" +
+"                                                                                                                              MMMM                                                                      \n" +
+"                                                                                                                                ++..                                                                    \n" +
+"                                                                                                                        ....--....@@      ::++--                                                        \n" +
+"                                                                                                  ....                --++++++::::mmmm::--mm::mm--                                                      \n" +
+"                                                                                              --      mm              ::MM::::..MM++@@--@@++mm@@mm::..                                                  \n" +
+"                                                                                            ......--..++          ..::mmMM@@@@@@##mm@@mm::mmmmmmMMmm::..                                                \n" +
+"                                                                                ..          --    ::::mm----    ..::mmMM@@########MMMMMM@@##@@mm@@MMmm--                                                \n" +
+"                                                                                  --..    --..  ..::mmMMmm@@..  ++++@@##@@######################@@##@@mm--                                              \n" +
+"                                                                                  ..--..  --------++MMMM@@MM@@++mm++@@################################MM++                                              \n" +
+"                                                                              ..--::    ..mm::::++MM##@@@@@@MMMMMM####################################@@++--                                            \n" +
+"                                                                                    --::++mmMMMMMM@@####@@@@MM@@######################################@@++::                                            \n" +
+"                                                                                ..--::++MMmmmmMM@@MM######@@MM++@@######################################mmmm                                            \n" +
+"                                                                            --  --  ::++++::mmmm##########@@@@@@####################################MM@@++mm                                            \n" +
+"                                                                        ..      ......::mm++::::::######@@MMMM##@@##################################++@@MMMM                                            \n" +
+"                                                                      ..        ..--mm++##MM########@@@@##MMMM######################################..@@mm                                              \n" +
+"                                                                            ..  ..++MM##################mm##MM####@@############################MM##MM##mm                                              \n" +
+"                                                                            --  ++++##MM############@@@@####@@mm##..####  ################@@--..##MM##@@mm                                              \n" +
+"                                                                          ..  ::mm##################MM@@############MM##MM  ..MM##########  ..##@@mm##MM::                                              \n" +
+"                                                                            @@######################MM##########@@############MMmm##--##::##@@####::##@@                                                \n" +
+"                                                                        ..MM######@@################MM@@##############::##########MM  ##########::++MM                                                  \n" +
+"                                                                      --::######@@####################################@@::########..  MM####MM++::@@##                                                  \n" +
+"                                                                    ....mm############################################@@::::######--MMMM@@##  ..####::                                                  \n" +
+"                                                                  --  mm##############################MM####@@mm########@@  ..##MM######....  MM####..                                                  \n" +
+"                                                                    mmMM##############################mm##################mm::....mm  ::..  MM####mm                                                    \n" +
+"                                                                  ++################@@################::@@####################++          mm@@####++::                                                  \n" +
+"                                                                --mm##MM##############################++####@@##################....  ::@@######MMmmmm                                                  \n" +
+"                                                            ..--++##################################@@mm##@@MM##@@##MM##########################mmmmmm::                                                \n" +
+"                                                            ..MM####################################@@mm########@@##############################MMMM++MM                                                \n" +
+"                                                      --..::++MM####################################MM@@####MM############@@##############@@####@@@@mm++                                                \n" +
+"                                                ..::....mmMMMM####################MM################mm########++################################@@@@MM++mm                                              \n" +
+"                                              ::::----@@mm@@##############@@######++################MMMM################@@######################@@####MM--                                              \n" +
+"                                            ....  @@@@mmmm@@####################++mm@@##############@@############MM##################################mm::--                                            \n" +
+"                                            ..::mmMMMM++@@MM@@##################::####################################################################MM::mm                                            \n" +
+"                                    ..--++--::++MMMMMM##@@####################@@++####################@@############################################@@##mm::..                                          \n" +
+"                                    ::++::##MM####MM##########################@@MM######################################################################mm++mm                                          \n" +
+"                                ----@@++@@##mm--@@############################mmMM####################@@############################@@####################++mm::                                        \n" +
+"                            ....--::mm++####@@MM################################@@####@@##############@@##########################::@@@@##########@@########++++                                        \n" +
+"                        ........::MM::######@@####################################@@##@@################################@@####@@##  ..mm@@##@@##############mm++--                                      \n" +
+"                      ..  ::::--MMmm####MM############################################mm################################..    ##mmMM    MM##@@####@@##########++                                        \n" +
+"                          ::mm++mm####@@@@############################################mm################################      mm::MM    ++######################::                                      \n" +
+"                        ..++mm##@@####mm##############################@@MM############@@################################          MM++  MM##mm####################++                                    \n" +
+"                        ++MM##MM####@@################################mm@@############@@########@@####################MM          ..++  mm##MM################--@@--                                    \n" +
+"                      ::##mm######@@##################################@@##############mm##############################                mm::##MM####################MM                                    \n" +
+"                    --mmMM######MM##############::####################@@@@############++##############################                --..@@##@@################mm@@::                                  \n" +
+"                    ++MM######MMMM############@@######################MM@@############++############################..                    ####MMMM##########MM    ::..                                  \n" +
+"                  ..##@@####@@########################################################mm############MM##############                      mm##  @@##########mm++    ::                                  \n" +
+"                ..mm######@@##############@@##########################################++##############@@##########--                      ..MM  mm##########@@MM      ..                                \n" +
+"                ..@@@@@@@@@@############################################@@############mm@@####################MM@@                          ++..@@::##########mm      --                                \n" +
+"              --++##MM@@MM##############@@############################################++mm##################MM##@@                          --  ++############++..                                      \n" +
+"                MMMM::MMMM@@##########@@@@##################MM########################mm++##################@@@@mm..                              ##@@########++MM                                      \n" +
+"            ----mm::--::@@@@@@######@@MMMM@@################MM##########################MMMM++####################MMmm                            ##@@########@@mm                                      \n" +
+"            --++++  ----MMMM@@####@@@@mm@@MM################@@############################MMMM##################@@@@MMmm--                        @@::########MMmm                                      \n" +
+"            ..mmMM      ++MM@@@@@@@@@@mm--  ##@@############MM################################MM########################MMMM                      --mm@@######@@mm                                      \n" +
+"          ----mm        ++@@@@@@@@MMmm--  ..MM@@##@@########::##################################MM####################@@@@@@mm::                    ##@@########mm++                                    \n" +
+"          --::          ++MMMM@@MM--      ::::@@##@@########MM##::################################@@########################@@@@MM::--              ::++########mmMM                                    \n" +
+"        ..--::        ..mmmmMMmmmm      ::  mm@@##@@######@@@@@@mm####################################MM######################@@MMMMmmMMmm          ::--########@@MM..                                  \n" +
+"        ::          ....++mmMM++            MM@@@@@@################################################################################@@MMmmmmMM        ::mm######MMmm                                    \n" +
+"        --            --mmmmmm              MM@@##@@##########@@##########################################@@MM##############################@@@@mmmm..++MM########MMmm                                  \n" +
+"        ..--          ::mmmm--            mmMM@@@@########@@@@mm############################################@@MM##########################@@####mm--    mmMM######MMmm                                  \n" +
+"      --..            mmmmmm            ++mmMM@@@@##########@@MM################################################mm################@@##############MM::--mmMM######@@mm++::                              \n" +
+"      ..            --mmmmMM  ::        mm@@@@##################mm################@@############################MM####@@@@############################MM--##########mmmm--                              \n" +
+"      ..          ....mmmm..++::--  ..--mmMM######################################################################::@@@@##@@########@@MMmm######@@######@@##++######mmmmmm                              \n" +
+"      ..        ....mmmmmmmmmmmm++--mmMMMMMM######################@@################################################@@@@####MMMM####@@MM@@    --mm############::::##@@MM++mm                            \n" +
+"      ..        ..::++mmMMmmMMMMMMmmmmMM@@@@@@##################MM################@@################################MM++######@@########mmMM          ::##MM####MM##..mmMM::..                          \n" +
+"      --      ..  ++mmMMMM@@MMMM@@MM@@@@##@@################@@##@@####################################################MM############@@##MMMMMM            ..######@@@@++mmMM                            \n" +
+"      ::        ::++++MMMMMMMMMMMM@@@@####@@@@################@@@@####################################################################@@MMMMMMmm          --####@@####@@::mm++                          \n" +
+"      ++      ::--mmMMMMMM@@MMMM@@##@@####@@##################MM##########################################################################@@####..          ##############  --                          \n" +
+"    --++        ..++MMMM@@@@MM@@########################################################################################@@################MMmm@@##::        MM##############++                          \n" +
+"    ..        ..--mmMMMM@@@@MM##############################MM############################################################@@##############MMmm..  ++::    ::++################MM                        \n" +
+"    --        ....MMMM@@##@@@@########@@##@@##################@@##########################################################################@@mm++    --    ::++########@@########mm                      \n" +
+"    --    --....--MM@@@@@@@@########@@@@@@@@##############@@@@################################################################@@############MM::::        ::MM##########@@########::                    \n" +
+"    --    ------++MMMM@@MMMM##########@@@@##############MM####################################################################################++++      --  ########################MM                  \n" +
+"    ::    ----..MMMMMMmm@@@@##@@##  ..mm##########MM######mm######MM##########################++##########################mm####################mm::      ::####@@########MM##MM######++                \n" +
+"    ::    --..--mmmmmm  MM@@##MMmm    MM##########@@##@@mm##########MM##########################MM@@######################mmMMmm################@@++..    --##################@@@@##MM####              \n" +
+"        ::..::::mmmm    mmMM##      mm@@@@@@########::@@MM######::@@############################::  MM######################--::@@################@@++    ++##############--######MMMM@@##mm            \n" +
+"  ..    --..::++++mm    ++MM..      --MM##@@####mmmmMMMM@@##@@@@mm##############################MM--  ##mm@@MM@@##mm####@@MM##--mmMM##############MMmm    ++####@@########..@@####MM##mmMM@@--          \n" +
+"          ++++mm..    --++MM          MM@@##@@MMMM@@::MM##@@mm@@########++####################@@    mmMM  mm  @@++MM########MM##  ::MM############@@mmmm--##--############..@@  ##@@@@@@  MM++          \n" +
+"      ::  ::++mm      --MM          ..MMMM@@@@MMmm@@::MM@@mmMM######..########################mm..    ..--mm..  MM@@mm##@@@@MM@@..  --mm@@##########@@::..##mm############MM::  MMMM  ##    @@mm        \n" +
+"      ....::::++    ----            ::MMMM@@MM++MM::mmMMmm@@##MM####  ##++##################@@mm..    ..++  ++::mm    ##MMMMmm@@MM    --++@@##########++..##--########@@@@@@    mmmm  ##mm    MM::      \n" +
+"      ....++..++    ..              mm##@@@@MMmm++++++::MM##--@@MM@@::    @@@@############@@##MMmm            ::++    ##@@::MMmm@@      ::::@@########@@::    ##MM######@@      mm@@  ##mm    mmmm      \n" +
+"      --..++        --            ..mm@@mmMMmmmm::--##::####MM##MM##      --@@################@@++              ::    ::  @@  ::++++    ::++@@##########MM++  ##MM######MM        mm  ::MM      mm      \n" +
+"    ..--..mmmm                    ::mmMM  mm++++++::mmmm##@@@@mmmm++        mm@@##############@@mm              --    ..          MM--    ++mm############mm..  ######@@          @@    MM      ##      \n" +
+"    ..::..::..    ..                  MMmmmm++++mm  --++@@##  ..++..        ::@@@@##########@@@@mm                                @@::    --##############MM@@  ##MM##@@          @@..  ##..    ..++    \n" +
+"  ..  --..++      ..              mmMMMMmmmmmm++--  ++mmMMMM    mm          ::@@@@##############mm                                ++    ::MMMMmm##########@@@@  ######@@          ::    ##--      ##    \n" +
+"  ----  ..mm      ..            ++mmMMmmmmmm++mm..MM++mm  mm    MM            MM@@############@@@@                                      ++MMMM############MM##  ########          ....  --mm      ::    \n" +
+"      ----      ..              ++mm++mmmm++++::..::      mm    mm            ::@@##############MM            ..::                    ::##mm##@@############@@  @@@@MM##          ....    MM            \n" +
+"    ::----                    ::mmmm++mm  ++++  ..        --    ++            --mm##############@@::              ++  mmmm++++mmmm::mm##MM@@##############@@##  ########          ....    mm        ::  \n" +
+"    ----                        ++mm++..  ++..            ++                    ++##############@@@@                  mmMMMMMM@@mm@@MM@@@@##############MM++  MM####@@##          ..      ++        --  \n" +
+"    --::                    --  mmmm++  ++::              MM                    ++##############@@mm                    ..++    mm@@@@################@@mm    ########MM          ..      ..            \n" +
+"    --::                      ::++++mm  --..  mm          --                    MM@@##############MM                      ::  MMMM######################  --############                                \n" +
+"    ::++                      ::::++  ..      ..          --                    MM::##############MM::                    ++MM####@@################@@      ############                                \n" +
+"  ..::mm                    ++::::::  mm                                          ++##############MMmm        ..@@@@######@@####@@##################@@    --############                                \n" +
+"    ::++                    ::++mm    --                                          mm++############@@++                  ++MM##################@@@@@@        ############                                \n" +
+"    ::--                  ::::::    ::                                            mmmm############MMMM                ++MM::mm####@@##@@####@@@@@@##      mm######@@####                                \n" +
+"    ::                      ++++                                                  ++##MM############mm                --    ################mm##MMMM      ######MM######                                \n" +
+"    ::                      ::                                                  ++++++############MMmm            ##      @@############@@MM++..@@--    --####@@########--                              \n" +
+"    ++                  --::::                                                  ::::##@@##########mm--          ++##    @@@@MM@@########mm  MM##        ##########@@##@@@@                              \n" +
+"    ++                    ::++                                                ::--mm####@@########mm          @@####..--MM######@@####::  ....          --##########MMMM                                \n" +
+"    mm                    --::                                                mmmm##############MM++      --######mmMMmmMM@@######mm..                  mm@@####mm####mm                                \n" +
+"    ++                    ::..                                            ..@@@@################mm    ..++@@@@######mm########@@++                          ####mm####mmMM                              \n" +
+"  --++                  ----                                            ..    @@##############MMMM    ##mm@@##################--                          ##MM######@@MM##..                            \n" +
+"  --::                  ::--                                              MM--++##############mm@@    ::mm@@################::                            --++######++######                            \n" +
+"  ----                    --                                                mm##################MM    ++@@################..                                  ##..      ####MM                          \n" +
+"  ..--                    ::                                              @@##################@@mm      @@##############--                                    @@..        ####MMmm                      \n" +
+"    ::..                  ++                                            MM@@##################@@mm      ################                                      ..--        ++######@@MM                  \n" +
+"    ::                    ++                                          mmMM##################@@@@::      ################                                                      @@########mm              \n" +
+"    ::                    ::                                        @@MM##mm################@@@@++--    ################                                                        ..######@@@@--          \n" +
+"    ::..                  ++                                ##++@@######..##################@@MM++..    ################++                                                          @@######MM--        \n" +
+"    ::--                  ++                              --  ##..MM  ##MM####################MM::      ##################                                                              ##MM@@@@::      \n" +
+"    ::::                  ++                                ::..  mm  MM####################MMMM..    ::################++                                                                ####@@##::    \n" +
+"    mm++                                                    @@      --##@@@@MM##############++MM::    MM##################                                                                  ######@@..  \n" +
+"    ++++                                                  ++        ######..################MMMM::    ############----####..                                                                  ######@@  \n" +
+"    ::::                                                          @@@@@@MM@@############@@@@  ::      ############    @@@@mm                                                                  ++######  \n" +
+"    ::::                                                      @@##--  ::MM##############@@          @@##########mm      ##..                                                                  --######@@\n" +
+"    ..::                                                    MM          @@##MM##########mm  MM      ############        ::++                                                                  ..########\n" +
+"      ::--                                                              @@..mm##########            MM########                                                                                  ########\n" +
+"      ::--                                                            @@@@mm::MM##@@##@@            @@######MM                                                                                ..####MM##\n" +
+"      ::                                                              ::@@  MM@@######MM            ########                                                                                  ++####mm##\n" +
+"      ::                                                            ##mm    ++########..          mm######--                                                                                  ########mm\n" +
+"        --                                                        mm::++    MMmm####MM            MM######                                                                                    ######@@  \n" +
+"        --                                                        ..        mm####@@@@            ######                                                                                    ####@@##@@  \n" +
+"        --                                                      mm  ++    ++##MM####              @@##MM                                                                                  @@######@@    \n" +
+"        ..                                                    ::          mm########            MM####                                                                                  ######MM@@      \n" +
+"          ++                                                ..            ######@@##            @@####                                                                                ######@@@@        \n" +
+"          --..                                                          mm@@######mm          --####                                                                    --      ..++##MM##@@..          \n" +
+"            ::                                                    @@##@@########@@            @@####                                                                        @@MM@@MMmm@@                \n" +
+"              ..                                                ..::##############            MM@@                                                                          --                          \n" +
+"                                                              ..MM##############mm            ##                                                                                                        \n" +
+"                                                            ##mmMM##############            MMMM                                                                                                        \n" +
+"                                                            mmmm################            ##                                                                                                          \n" +
+"                                                            MMMM@@##############          @@                                                                                                            \n" +
+"                                                            ##@@################          ..                                                                                                            \n" +
+"                                                              ################@@                                                                                                                        \n" +
+"                                                              ##MM##############                                                                                                                        \n" +
+"                                                              ##MM################..                                                                                                                    \n" +
+"                                                              ##MM################  ..                                                                                                                  \n" +
+"                                                              ##mm################mm                                                                                                                    \n" +
+"                                                              ++@@##########@@++@@MM                                                                                                                    \n" +
+"                                                              ::############--    MM                                                                                                                    \n" +
+"                                                              ..############::                                                                                                                          \n" +
+"                                                                ############--      mm                                                                                                                  \n" +
+"                                                                ############MM                                                                                                                          \n" +
+"                                                              ::##@@##########                                                                                                                          \n" +
+"                                                              ++MM##########@@                                                                                                                          \n" +
+"                                                              ::MMMMMM########@@::                                                                                                                      \n" +
+"                                                              ++MMMMmm##############                                                                                                                    \n" +
+"                                                        ..--::++MM##MMmmmm####@@####mmMMmm::..::::::----....                                                                                            \n" +
+"                    ..--++++++++++++++::++++++++++MMmmMMmm++++::++++@@@@@@@@MMmmmmMMMMmm++mmMMmmMM@@@@MM++++::..                                                                                        \n" +
+"                  --++++mmmmMMMMMMmmmmMMmm++++MMmm@@++::--::mmMM::@@++MMmm@@@@MM@@MM@@MMMMMMmmMMMM##@@MM@@MMMMMMMMMMMMMMMMmmmmmmmmmm++++::--..        \n " );
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+        }
+        
+        //Sistema de combate
+//O jogador irá jogar um d10(dado de 10 lados) caso o valor for maior que 5 ele defende e contra-ataca
+//Caso o valor for menor que 5 ele toma 5 de dano, 
+//Ele tem que contra-atacar duas vezes, ou seja, tirar duas vezes no dado um número maior que 5
+//Caso ele morra
+//Você sofreu muito dano pelo fantasma, sem força você larga a espada no chão e cai sobre os pés do Jasquim, infelizmente esse é o seu infeliz fim. Fim de jogo.
+//Caso ele contra-ataca 2 vezes segue a história.
+//Finalmente o combate acaba, você corre em direção do corpo e o incinera 
+        
+        static void casa6(int walk){ 
+         System.out.println("Finalmente o combate acaba, você corre em direção do corpo e o incinera \n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+
+         System.out.println("O ar fica mais leve e você sabe que finalmente aquele espírito irá descansar em pás \n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+
+         System.out.println("Jasquim – Acabou ?\n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+       
+         System.out.println( nomejogador + " – Sim.\n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+
+         System.out.println("Jasquim – Finalmente, agora meu negócio irá se tonar realidade, tenho que limpar esse lugar e tirar esse corpo da aqui, mas como será que ele morreu coitado.\n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+         
+
+         System.out.println(" Você observa o lugar secreto, e vê que parece uma espécie de abrigo, aparentemente era confortável, porém ao tentar procurar algum motivo dele ter morrido ali \n "
+         + "você se depara com a entrada e vê que do lado tem uma espécie de alavanca quebrada e entende que ele deve te ficado preso ali pois a alavanca que abre a porta secreta quebrou ele deve ter morrido aqui de fome ou cede. \n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+
+         System.out.println("Você explica isso ao Jasquim \n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+
+         System.out.println("Jasquim -  Coitado. Enfim, aqui poderia ser um bom armazém, irei adicionar isso em meu caderno. A falando nisso quer saber como eu conseguir essa casa? \n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+
+         System.out.println( nomejogador + " – Não, me pague.\n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+
+         System.out.println("Jasquim – Certo, certo.  \n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+
+         System.out.println("Ele tira um saco cheio de pó (peças de ouro) e o entrega.\n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+
+         System.out.println(" Você nem se da o trabalho de contar as moedas, apenas pega o saco e deseja sair de lá o mais rápido possível   \n" );
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+
+         System.out.println("Jasquim -  Obrigado pelo sérvio, pode deixar que irei criar uma poção em sua homenagem, enfim agora pode ir, terei muito trabalho de agora em diante restaurando essa casa, principalmente no...\n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+
+         System.out.println("Jasquim está falando sozinho, nesse momento você esta em caminho ao estabulo onde deixou de repouso a sua bela montaria, você guarda o saco de moedas, arruma a sela, e faz um carinho leve no cavalo, e parte em direção  a uma nova cidade para fazer mais trabalhos.\n");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+
+     
+         System.out.println("E assim termina essa aventura. Fim");
+         System.out.println("Aperte enter para seguir"); 
+         try{System.in.read();}
+         catch(Exception e){}
+        }
+        
     
    public static void main(String[] args) {
     int opcaomenu = menu();  
