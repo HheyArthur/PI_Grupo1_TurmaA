@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
+import javax.management.openmbean.OpenMBeanConstructorInfo;
+
 
 public class App {
 
@@ -53,11 +55,11 @@ public static int sinopse (int opcaomenu) {
   return opcaomenu;
 }
 
-public static int instrucoes (int opcaomenu) {
+public static void instrucoes (int opcaomenu) {
   System.out.println("Instruçoes:\n"
   + "Esse jogo é game -rpg com objetivo de abordar assunto de administração.\n"
   + "Durante a histora terá perguntas relacionada ao tema, o jogador, no caso você tem 3 chances de acertar elas. Bom jogo\n");
-  return opcaomenu;
+  
 }
 
 public static void sair (int opcaomenu) {
@@ -76,18 +78,69 @@ public static void caminhos (int opcaomenu) {
   System.out.println("Escolha uma opção para se aventurar: ");
   System.out.println("1 - Taberna");
   System.out.println("2 - Casa");
+  System.out.println("3 - Voltar");
+
 
   walk = input.nextInt();
 
-  } while (walk >= 3 || walk <= 0 ) ;
+  } while (walk >= 4 || walk <= 0 ) ;
 validacoes(walk); // fazer a pergunta com a mesma logica
 }
 
+public static void questaoUm(int walk) {
 
-public static int questaoDois(int walk) {
+           
+        
+   Scanner input = new Scanner(System.in);
+ 
+int tentativa = 0;
+String resp01;
+
+
+
+do {
+
+
+  System.out.println(" A administração clássica e administração burocrática. ");
+  System.out.println(" B administração clássica e administração comportamental.");
+  System.out.println(" C administração burocrática e administração cientifica");
+  System.out.println(" D administração clássica e administração cientifica");
+  System.out.println(" E administração cientifica e administração comportamental \n");
+  System.out.println("Qual é a alternativa correta ? \n");
+  
+
+   resp01 = input.next();
+  
+  switch(resp01){
+  case "D":
+  case "d":
+   System.out.println(" Resposta certa");
+   tentativa = 3;
+   break;
+   default:
+   if (tentativa <= 1){
+   System.out.println("Resposta errada");
+   
+   tentativa++;
+   }else{
+      gameover(walk);
+   tentativa = 2;
+   }
+   }
+  
+   } while (tentativa <=2);
+} 
+
+
+
+
+public static void questaoDois (int walk) {
    Scanner entrada = new Scanner(System.in);
-      String pergunta02;
+   boolean acertou02 = false;  
+   String pergunta02;
+      int tentativa = 0;
       int resp02tb;
+      do {
       ArrayList<String> alternativa = new ArrayList<String>();/* criação da lista */
       alternativa.add("Elton Mayo e Max Weber.");
       alternativa.add("Max Weber e Henri Fayol.");
@@ -107,60 +160,80 @@ public static int questaoDois(int walk) {
          case 1:
             if (alternativa.get(0).equals("Henri Fayol e Frederick Taylor")) {
                System.out.println("Parabéns! Você deve ter aprendido muito com esses autores");
-contaberna++;
+                acertou02 = true;
             } else {
                System.out.println(
                      "Que pena você errou! Acho que pegou livro errado. Tem certeza que são esses os autores?");
+                     System.out.println("\nTente novamente");
+                     tentativa++;
+
             }
             break;
          case 2:
             if (alternativa.get(1).equals("Henri Fayol e Frederick Taylor")) {
                System.out.println("Parabéns! Você deve ter aprendido muito com esses autores");
-               contaberna++;
+               
+               acertou02 = true;
             } else {
                System.out.println(
                   "Que pena você errou! Acho que pegou livro errado. Tem certeza que são esses os autores?");
-            }
+                  tentativa++;
+
+               }
             break;
          case 3:
             if (alternativa.get(2).equals("Henri Fayol e Frederick Taylor")) {
                System.out.println("Parabéns! Você deve ter aprendido muito com esses autores");
-               contaberna++;
+               
+               acertou02 = true;
             } else {
                System.out.println(
                   "Que pena você errou! Acho que pegou livro errado. Tem certeza que são esses os autores?");
+                  tentativa++;
+
             }
             break;
          case 4:
             if (alternativa.get(3).equals("Henri Fayol e Frederick Taylor")) {
                System.out.println("Parabéns! Você deve ter aprendido muito com esses autores");
-               contaberna++;
+               
+
+               acertou02 = true;
             } else {
                System.out.println(
                   "Que pena você errou! Acho que pegou livro errado. Tem certeza que são esses os autores?");
+                  tentativa++;
             }
             break;
          case 5:
             if (alternativa.get(4).equals("Henri Fayol e Frederick Taylor")) {
                System.out.println("Parabéns! Você deve ter aprendido muito com esses autores");
-               contaberna++;
+               
+               acertou02 = true;
             } else {
                System.out.println(
                   "Que pena você errou! Acho que pegou livro errado. Tem certeza que são esses os autores?");
-            }
+            tentativa++;
+               }
             break;
          default:
             System.out.println("Opção Inválida");
-      } return resp02tb;
-   }
+      } if (tentativa == 3) {
+         gameover(walk);
+      }
+       } while (!acertou02 && tentativa <= 2);
+      } 
 
 
 
 
-public static int questaoTres(int walk) {
+public static void questaoTres(int walk) {
    Scanner entrada = new Scanner(System.in); 
+   boolean acertou03 = false; 
       String pergunta03;
+      int tentativa = 0;
       int resp03tb;
+      do {
       ArrayList<String> alternativa = new ArrayList<String>();/* criação da lista */
       alternativa.add("Teoria das Relações Humanas.");
       alternativa.add("Teoria Classica.");
@@ -181,56 +254,65 @@ public static int questaoTres(int walk) {
          case 1:
             if (alternativa.get(0).equals("Teoria Científica.")) {
                System.out.println("Parabéns! Parece que está treinando e capacitando bem seus funcionários");
-   contaberna++;
+               acertou03 = true;
+               
             } else {
                System.out.println(
                      "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro."
                      + " Não conseguirá treinar ninguém assim!");
+                     tentativa++;
             }
             break;
          case 2:
             if (alternativa.get(1).equals("Teoria Científica.")) {
                System.out.println("Parabéns! Parece que está treinando e capacitando bem seus funcionários");
-               contaberna++;
+               acertou03 = true;
             } else {
                System.out.println(
                   "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro. "
                   + " Não conseguirá treinar ninguém assim!");
+                  tentativa++;
             }
             break;
          case 3:
             if (alternativa.get(2).equals("Teoria Científica.")) {
                System.out.println("Parabéns! Parece que está treinando e capacitando bem seus funcionários");
-               contaberna++;
+               acertou03 = true;
             } else {
                System.out.println(
                   " Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro. "
                   + " Não conseguirá treinar ninguém assim!");
+                  tentativa++;
             }
             break;
          case 4:
             if (alternativa.get(3).equals("Teoria Científica.")) {
                System.out.println("Parabéns! Parece que está treinando e capacitando bem seus funcionários");
-               contaberna++;
+               acertou03 = true;
             } else {
                System.out.println(
                   "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro."  
                   + " Não conseguirá treinar ninguém assim!");
+                  tentativa++;
             }
             break;
          case 5:
             if (alternativa.get(4).equals("Teoria Científica.")) {
                System.out.println("Parabéns! Parece que está treinando e capacitando bem seus funcionários");
-               contaberna++;
+               acertou03 = true;
             } else {
                System.out.println(
                   "Que pena você errou! Você acabou de perder a chance de conhecer este incrível livro."
                   + " Não conseguirá treinar ninguém assim!");
+                  tentativa++;
             }
             break;
          default:
             System.out.println("Opção Inválida");
-      } return resp03tb;
+      }if (tentativa == 3) {
+         gameover(walk);
+      } 
+   } while (!acertou03 && tentativa <= 2);
    }
 
 
@@ -423,16 +505,15 @@ contaberna++;
    public static int questaoSete(int walk) {
    Scanner entrada = new Scanner(System.in);
          String pergunta07;
-         int resp07tb, tentativa = 0;
-         boolean acertou07 = false;
+         int resp07tb;
+         
          ArrayList<String> alternativa = new ArrayList<String>();/* criação da lista */
          alternativa.add(" Ênfase na estrutura");// *resposta corrreta */
          alternativa.add(" Ênfase nas tarefas");
          alternativa.add(" Ênfase no mercado");
          alternativa.add(" Ênfase na indústria");
 
-         do {
-
+         
             Collections.shuffle(alternativa);// **embaralha as alternativas**//
 
             pergunta07 = "\nAs origens da Abordagem Clássica da Administração remontam às consequências geradas pela Revolução Industrial e podem ser resumidas em dois fatos genéricos:"
@@ -446,65 +527,81 @@ contaberna++;
             resp07tb= entrada.nextInt();
             switch (resp07tb) {
                case 1:
-                  if (alternativa.get(0).equals(" Ênfase na estrutura"))
-                     acertou07 = true;
-                  tentativa = tentativa + 1;
+                  if (alternativa.get(0).equals(" Ênfase na estrutura")) {
+
+                  
+                    
+                  contaberna++;
+                  
+            } else {
+                     System.out.println( // mudar o texto?
+                           "Que pena você errou! Você acabou de perder o cômodo para a loja, bom parece que você perdeu tudo!!");
+                  }
 
                   break;
                case 2:
 
                   if (alternativa.get(1).equals(" Ênfase na estrutura")) {
-                     acertou07 = true;
-                     tentativa = tentativa + 1;
-
+                                          
+                  }
+                  else {
+                     System.out.println( // mudar o texto?
+                           "Que pena você errou! Você acabou de perder o cômodo para a loja, bom parece que você perdeu tudo!!");
                   }
                   break;
                case 3:
 
                   if (alternativa.get(2).equals(" Ênfase na estrutura")) {
-                     acertou07 = true;
-                     tentativa = tentativa + 1;
-
+                     contaberna++;
+                     
+                  }
+                  else {
+                     System.out.println( // mudar o texto?
+                           "Que pena você errou! Você acabou de perder o cômodo para a loja, bom parece que você perdeu tudo!!");
                   }
 
                   break;
                case 4:
                   if (alternativa.get(3).equals(" Ênfase na estrutura")) {
-                     acertou07 = true;
-                     tentativa = tentativa + 1;
-
+                     contaberna++;
+                     
+                  }
+                  else {
+                     System.out.println( // mudar o texto?
+                           "Que pena você errou! Você acabou de perder o cômodo para a loja, bom parece que você perdeu tudo!!");
                   }
                   break;
                default:
                   System.out.println("Opção Inválida");
-                  tentativa = tentativa + 1;
+                 
 
-            }
-         } while (!acertou07 & tentativa < 3);
-         if (acertou07) {
-            System.out.println("Parabéns! Parece que você está indo bem nos negócios");
-
-         } else {
-            System.out.println(
-                  "Que pena você perdeu tudo! Que tal revisarmos o conteúdo");
-         }return resp07tb;
-
-      } // pergunta para a denise
+            } return resp07tb;
+         } 
+         
+       
    
 
+public static void gameover (int walk) {
+   System.out.println("\n" + nomejogador + " Infelizmente não foi dessa vez meu nobre tente novamente. \n");
+   caminhos(walk);
+}
 
 
 
- // public static void validperguntas
+
 
  public static void validacoes (int walk) {
    if (walk == 1){
-    taberna0(walk);
-    taberna1(walk, nomejogador);
-    taberna2(walk, nomejogador);
-    taberna3(walk);
-    taberna4(walk);
-    taberna5(walk);
+   taberna0(walk);
+   taberna1(walk, nomejogador);
+   taberna2(walk);
+    taberna3(walk,nomejogador);
+    taberna4(walk,nomejogador, nomejogador,nomejogador, nomejogador);
+    if (contaberna >= 3) {
+      taberna5(contaberna);
+   } else {
+      gameover(contaberna);
+   }
    }
    if (walk == 2) {
     casa0(walk);
@@ -516,18 +613,13 @@ contaberna++;
     casa6(walk);
 
 
-   } 
-  //  else{ 
-  //   System.out.println("Opção invalida tente novamente ");
-  //  }
+   } if (walk == 3) {
+      menu();
+   }
+  
 }
 
-// Meio um teste para saber oomo usar array
 
-/* public static String perguntas () {
-  String  alternativas = [{1:""},{B:""}] 
-  alternativas [0]
-} */
 
 
      public static void pedirnome() {   
@@ -640,7 +732,7 @@ break;
    } /// ok
    
    
-      static void taberna1(int walk, String resp04tb) {
+      static void taberna1(int walk, String resp01tb) {
 
                   System.out.println("Aperte enter para seguir\n"); 
                   try{System.in.read();}
@@ -672,30 +764,14 @@ break;
                   System.out.println("Aperte enter para seguir\n"); 
                   try{System.in.read();}
                   catch(Exception e){}
-                  questaoDois(walk);
-                  questaoTres(walk);
-                  questaoQuatro(walk);
-                  questaoCinco(walk);
-                  questaoSeis(walk);
-                  System.out.println(contaberna);
-                  questaoSete(walk);
-
-                 // System.out.println( "... O que seria a teoria da administração");
-
-                 System.out.println("Teste " + contaberna);
+                 questaoUm(walk);
               
-              // (((por a quest perguntando oque é teoria da adm)))
-   
-
-
-
 
  }
 
-            
 
     
-      static void taberna2(int walk, String resp04tb){
+      static void taberna2(int walk){
 
                   System.out.println( nomejogador + " ... Interessante, deveria te pesquisado mais sobre isso antes de ir falar com o agiota enfim, mas acho que esta tarde demais, não sei se isso vai me ajudar agora na minha situação.\n");
                   System.out.println("Aperte enter para seguir\n"); 
@@ -728,15 +804,16 @@ break;
                  +"O sol passa diante a janela e vai em direção aos seus olhos, você levante e se arruma para mais um dia, antes de sair de seu quarto você lembra Chimbinha disse que iria te ajudar.\n" 
                  +"Você lembra que ele disse algo sobre administração e deseja ir ver se você não tem algum livro disso em seu escritório \n" 
                  +"Você finalmente acha o que estava procurando. dois livros, um com o título, administração clássica e o outro com o nome de administração cientifica ");
-                    questaoCinco(walk);
+
+                    questaoDois(walk);
    }
     
+    //nome dos criadores
     
     
-    
-        static void taberna3(int walk){
+        static void taberna3(int walk, String resp03tb){
 
-          System.out.println("Teste " + contaberna);
+         
 
                 
                   System.out.println("Após pegar os livros e ler um pouco você percebe que está quase na hora de ir ver Chimbinha, você se arruma para ver seu amigo\n");
@@ -804,13 +881,14 @@ break;
                   System.out.println("Aperte enter para seguir\n"); 
                   try{System.in.read();}
                   catch(Exception e){}
+
+                  questaoTres(walk);
                 
                 
         }
 
-    //((Questão sobre capacitação de funcionário))
     
-    static void taberna4(int walk) {
+    static void taberna4(int walk, String resp04tb, String resp05tb, String resp06tb, String resp07tb) {
             
             
                  System.out.println("Chimbinha ... Entendeu? \n");
@@ -932,67 +1010,21 @@ break;
                  System.out.println("Aperte enter para seguir\n"); 
                  try{System.in.read();}
                  catch(Exception e){}
-                         
+               
                 System.out.println("Chimbinha ... Vamos começar!");
+                System.out.println("Você tem que acerta todas as questões para passar!");
                  System.out.println("Aperte enter para seguir\n"); 
                  try{System.in.read();}
                  catch(Exception e){}
+                 questaoQuatro(walk);
+                 questaoCinco(walk);
+                 questaoSeis(walk);
+                 questaoSete(walk);
                          
          }
          
     
-    // criar uma função de bens materiais//
-    //a ideia é que ele não tenha chances de voltar para acertar nas primeiras questões então errou perdeu algo
-    
-    
-    /*Chimbinha - Qual teoria se concentrou em melhorar a eficiência de cada indivíduo dentro da organização?
 
-a)	Administração Científica
-b)	Administração Clássica
-
-
-nomejogador errar
-(aparecer a msg que pena você errou! Você acabou de perder as formas de molde de espada) 
-nomejogador acertou
-(aparecer a msg Parabéns! Começou bem os negócios)
- acredito que dá para seguir com as perguntas e elaborar um pequeno diálogo somente antes da última pergunta//**
-Então continua as perguntas...
-Chimbinha - Uma equipe alinhada e bem relacionada trará um ambiente de trabalho agradável e mais produtivo, pensando nisso é correto afirmar que em relação ao bom desenvolvimento de toda a equipe:
-a)	O líder deve ser arbitrário em suas decisões.
-b)	As críticas devem ser evitadas.
-c)	A equipe deve respeitar as divergências e diversidades.
-d)	As opiniões deverão ser ignoradas
-e)	As responsabilidades devem ser delegadas.
-
-nomejogador errar
-(aparecer a msg que pena você errou! Você acabou de perder o galpão, desse jeito vai se dá mal hein!) 
-nomejogador acertou
-(aparecer a msg Parabéns! Parece que você está indo bem nos negócios)
-
-Chimbinha - Ao buscar aumentar sempre a produtividade, a Administração científica voltou-se para a tecnologia de:
-a)	não padronização
-b)	customização da produção
-c)	produção em massa
-d)	liberdade de formas de trabalho
-
-nomejogador errar
-(aparecer a msg que pena você errou! Você acabou de perder o cômodo para a loja, bom parece que você perdeu tudo!!) 
-Diálogo
-Chimbinha - Meu caro parece que os conceitos não ficaram muito claros para você, te farei uma pergunta bônus para tentarmos recuperar tudo, se errar precisará revisar os seus estudos e retornaremos ao questionário o que acha?
-nomejogador ... É parece que me equivoquei, mas vamos lá para a pergunta bônus
- a pergunta abaixo só aparecerá se ele errar todas as 3 questões anteriores//**
-Chimbinha - As origens da Abordagem Clássica da Administração remontam às consequências geradas pela Revolução Industrial e podem ser resumidas em dois fatos genéricos: o crescimento acelerado e desorganizado das empresas e a necessidade de aumentar a eficiência e a competência das organizações. A Abordagem Clássica da Administração foi desdobrada em Administração Científica (Taylor) e Teoria Clássica (Fayol). Aponte a alternativa que indica a ênfase da Teoria Clássica.
-a)	Ênfase na estrutura.
-b)	Ênfase nas tarefas.
-c)	Ênfase no mercado.
-d)	Ênfase na indústria.
-
-nomejogador errar
-(aparecer msg que pena! Você perdeu tudo! Que tal revisarmos o conteúdo) 
-
-nomejogador acertou
-(aparecer a msg Parabéns! Você será um sucesso como empreendedor)
- bom a ideia é basicamente responder 3 questões corretas finaliza o jogo, caso contrário retorna o jogo*/
     
     
     static void taberna5(int walk){
@@ -1047,12 +1079,13 @@ nomejogador acertou
                  System.out.println("Aperte enter para seguir\n"); 
                  try{System.in.read();}
                  catch(Exception e){}
-                         
+                         System.out.println("all teste " + contaberna);
                 System.out.println( "Fim de jogo");
           
                          
              
-    }  static void casa0 (int walk){
+    }
+      static void casa0 (int walk){
         
                  System.out.println("Era de noite, um homem montado a cavalo passava pela uma estrada cheia de nevoas, indo em direção a uma grande vila chamada Vila do Corvo\n");
                  System.out.println("Aperte enter para seguir\n"); 
@@ -1940,7 +1973,7 @@ nomejogador acertou
 //Caso ele contra-ataca 2 vezes segue a história.
 //Finalmente o combate acaba, você corre em direção do corpo e o incinera 
         
-        static void casa6(int walk){ 
+        static void casa6(int walk) { 
          System.out.println("Finalmente o combate acaba, você corre em direção do corpo e o incinera \n");
          System.out.println("Aperte enter para seguir\n"); 
          try{System.in.read();}
