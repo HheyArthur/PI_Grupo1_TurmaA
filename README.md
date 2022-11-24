@@ -1,4 +1,6 @@
-## Projeto de um jogo rpg textual em java 
+## Bem vindo ao WAY TO SUCESS 
+
+# Um jogo rpg textual em java 
 
 ## Em desenvolvimento.
 
