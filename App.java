@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-import javax.management.openmbean.OpenMBeanConstructorInfo;
 
 
 public class App {
@@ -20,10 +19,11 @@ public static int menu(){
         do{
 
 
-            System.out.println("Título do jogo");
         Scanner input = new Scanner(System.in);
         System.out.println("\n  ==================================== ");
         System.out.println("");
+        System.out.println("                 WAY TO SUCESS       ");
+        System.out.println();
         System.out.println("                 1 - Jogar ");
         System.out.println("                 2 - Instruções");
         System.out.println("                 3 - Sinopse");
@@ -74,17 +74,18 @@ public static void caminhos (int opcaomenu) {
   do{
 
   Scanner input = new Scanner(System.in);
-  System.out.println( "Duas historia com o mesmo objetivo, faça sua escolha e siga o seu caminho");
+  System.out.println( "\nDuas historia com o mesmo objetivo, faça sua escolha e siga o seu caminho");
   System.out.println("Escolha uma opção para se aventurar: ");
   System.out.println("1 - Taberna");
   System.out.println("2 - Casa");
-  System.out.println("3 - Voltar");
+  System.out.println("Escolha uma opção: ");
+
 
 
   walk = input.nextInt();
 
   } while (walk >= 4 || walk <= 0 ) ;
-validacoes(walk); // fazer a pergunta com a mesma logica
+validacoes(walk); // puxando a pergunta para fazer a validações
 }
 
 public static void questaoUm(int walk) {
@@ -578,11 +579,205 @@ contaberna++;
             } return resp07tb;
          } 
          
-       
+
+
+         public static void questaoDoisCasa (int walk) {
+            Scanner entrada = new Scanner(System.in);
+            boolean acertou02 = false;
+            String pergunta02;
+               int tentativa = 0;
+               int resp02tb;
+               do {
+               ArrayList<String> alternativa = new ArrayList<String>();/* criação da lista */
+               alternativa.add("Nome, cpf,  número da casa e estado civil, formação, Experiencia. ");
+               alternativa.add("Endereço completo, nome, trabalhos anteriores, formação Qualidades, Experiencia.");
+               alternativa.add("Nome, Idade, Formação, Qualidade, Experiencia ");
+               alternativa.add("Nome, E-mail, Telefone de contato Cidade onde mora Idade ou data de nascimento  Área  de atuação, Formação, Qualidades, Experiencia");//resposta corrreta */
+               alternativa.add("Sexualidade, Estado Civil, Número de telefone, Experiencia, Telefone.");
+         
+               Collections.shuffle(alternativa);// embaralha as alternativas//
+         
+               pergunta02 = "\nQual Alternativa se encaixa melhor em dados que deve ter em um curriculo\n"
+                     + "\n1) " + alternativa.get(0) + "\n" + "2) " + alternativa.get(1) + "\n" + "3) " + alternativa.get(2)
+                     + "\n" + "4) " + alternativa.get(3)
+                     + "\n" + "5) " + alternativa.get(4);
+               System.out.println(pergunta02);
+               resp02tb = entrada.nextInt();
+               switch (resp02tb) {
+                  case 1:
+                     if (alternativa.get(0).equals("Nome, E-mail, Telefone de contato Cidade onde mora Idade ou data de nascimento  Área  de atuação, Formação, Qualidades, Experiencia")) {
+                        System.out.println("Jasquim : Boa, você realmente não e um caçador burro");
+                         acertou02 = true;
+                     } else {
+                        System.out.println(
+                              "Você errou a pergunta, Jasquim  rir de você e te pergunta novamente");
+                              System.out.println("\nTente novamente");
+                              tentativa++;
+         
+                     }
+                     break;
+                     case 2:
+            if (alternativa.get(1).equals("Nome, E-mail, Telefone de contato Cidade onde mora Idade ou data de nascimento  Área  de atuação, Formação, Qualidades, Experiencia")) {
+               System.out.println("Jasquim : Boa, você realmente não e um caçador burro");
+
+               acertou02 = true;
+            } else {
+               System.out.println(
+                  "Você errou a pergunta, Jasquim  rir de você e te pergunta novamente ");
+                  tentativa++;
+
+               }
+            break;
+         case 3:
+            if (alternativa.get(2).equals("Nome, E-mail, Telefone de contato Cidade onde mora Idade ou data de nascimento  Área  de atuação, Formação, Qualidades, Experiencia")) {
+               System.out.println("Jasquim : Boa, você realmente não e um caçador burro");
+
+               acertou02 = true;
+            } else {
+               System.out.println(
+                  "Você errou a pergunta, Jasquim  rir de você e te pergunta novamente");
+                  tentativa++;
+
+            }
+            break;
+            case 4:
+            if (alternativa.get(3).equals("Nome, E-mail, Telefone de contato Cidade onde mora Idade ou data de nascimento  Área  de atuação, Formação, Qualidades, Experiencia")) {
+               System.out.println("Jasquim : Boa, você realmente não e um caçador burro");
+
+
+               acertou02 = true;
+            } else {
+               System.out.println(
+                  "Você errou a pergunta, Jasquim  rir de você e te pergunta novamente");
+                  tentativa++;
+            }
+            break;
+         case 5:
+            if (alternativa.get(4).equals("Nome, E-mail, Telefone de contato Cidade onde mora Idade ou data de nascimento  Área  de atuação, Formação, Qualidades, Experiencia")) {
+               System.out.println("Jasquim : Boa, você realmente não e um caçador burro");
+
+               acertou02 = true;
+            } else {
+               System.out.println(
+                  "Você errou a pergunta, Jasquim  rir de você e te pergunta novamente");
+            tentativa++;
+               }
+            break;
+default:
+            System.out.println("Opção Inválida");
+      } if (tentativa == 3) {
+         gameover2(walk);
+      }
+       } while (!acertou02 && tentativa <= 2);
+      }
+         
+      public static void questaoTresCasa  (int walk) {
+         Scanner entrada = new Scanner(System.in);
+         boolean acertou03 = false;
+         String pergunta03;
+            int tentativa = 0;
+            int resp03cs;
+            do {
+            ArrayList<String> alternativa = new ArrayList<String>();// criação da lista //
+            alternativa.add("Administração clássica e administração cientifica");//resposta corrreta 
+            alternativa.add("Administração clássica e administração comportamental");
+            alternativa.add("Administração clássica e administração burocrática");
+            alternativa.add("Administração cientifica e administração comportamental");
+            alternativa.add("Administração burocrática e administração cientifica");
+      
+            Collections.shuffle(alternativa);// embaralha as alternativas//
+      
+            pergunta03 = "\nVocê tenta procurar nos montes dos livros algo que tenha relação sobre a informação obtida na carta, seguindo o que ela diz, qual  seria o livro que você deve achar a resposta  \n"
+                  + "\n1) " + alternativa.get(0) + "\n" + "2) " + alternativa.get(1) + "\n" + "3) " + alternativa.get(2)
+                  + "\n" + "4) " + alternativa.get(3)
+                  + "\n" + "5) " + alternativa.get(4);
+            System.out.println(pergunta03);
+            resp03cs = entrada.nextInt();
+            switch (resp03cs) {
+               case 1:
+                  if (alternativa.get(0).equals("Administração clássica e administração cientifica")) {
+                     System.out.println("Você acerta em cheio e pega o livro");
+                      acertou03 = true;
+                  } else {
+                     System.out.println(
+                           "Você errou a pergunta, Jasquim  rir de você e te pergunta novamente");
+                           System.out.println("\nTente novamente");
+                           tentativa++;
+      
+                  }
+                  break;
+      case 2:
+                  if (alternativa.get(1).equals("Administração clássica e administração cientifica")) {
+                     System.out.println("Você acerta em cheio e pega o livro");
+      
+                     acertou03 = true;
+                  } else {
+                     System.out.println(
+                        "Você errou a pergunta, Jasquim  rir de você e te pergunta novamente ");
+                        tentativa++;
+      
+                     }
+                  break;
+               case 3:
+                  if (alternativa.get(2).equals("Administração clássica e administração cientifica")) {
+                     System.out.println("Você acerta em cheio e pega o livro");
+      
+                     acertou03 = true;
+                  } else {
+                     System.out.println(
+                        "Você errou a pergunta, Jasquim  rir de você e te pergunta novamente");
+                        tentativa++;
+      
+                  }
+                  break;
+      case 4:
+                  if (alternativa.get(3).equals("Administração clássica e administração cientifica")) {
+                     System.out.println("Você acerta em cheio e pega o livro");
+      
+      
+                     acertou03 = true;
+                  } else {
+                     System.out.println(
+                        "Você errou a pergunta, Jasquim  rir de você e te pergunta novamente");
+                        tentativa++;
+                  }
+                  break;
+               case 5:
+                  if (alternativa.get(4).equals("Administração clássica e administração cientifica")) {
+                     System.out.println("Você acerta em cheio e pega o livro");
+      
+                     acertou03 = true;
+                  } else {
+                     System.out.println(
+                        "Você errou a pergunta, Jasquim  rir de você e te pergunta novamente");
+                  tentativa++;
+                     }
+                  break;
+      default:
+                  System.out.println("Opção Inválida");
+            } if (tentativa == 3) {
+              gameover2(walk);
+            }
+             } while (!acertou03 && tentativa <= 2);
+            }
+
+
+
+
    
 
 public static void gameover (int walk) {
    System.out.println("\n" + nomejogador + " Infelizmente não foi dessa vez meu nobre tente novamente. \n");
+   caminhos(walk);
+}
+
+public static void gameover2 (int walk) {
+   System.out.println("\n Você erra as perguntas, fica de saco cheio de ouvir sobre esse assuntos você deixa esse contrato de lado e  desiste de terminar essa missão. \n");
+   caminhos(walk);
+}
+
+public static void gameover3 (int walk) {
+   System.out.println("\n Você sofreu muito dano pelo fantasma, sem força você larga a espada no chão e cai sobre os pés do Jasquim, infelizmente esse é o seu infeliz fim. Fim de jogo. \n");
    caminhos(walk);
 }
 
@@ -606,16 +801,17 @@ public static void gameover (int walk) {
    if (walk == 2) {
     casa0(walk);
     casa1(walk);
+    // if (combate)
     casa2(walk);
     casa3(walk);
+    // if (combate)
     casa4(walk);
     casa5(walk);
+    // if ( combate)
     casa6(walk);
 
 
-   } if (walk == 3) {
-      menu();
-   }
+   } 
   
 }
 
@@ -1086,7 +1282,7 @@ break;
              
     }
       static void casa0 (int walk){
-        
+                
                  System.out.println("Era de noite, um homem montado a cavalo passava pela uma estrada cheia de nevoas, indo em direção a uma grande vila chamada Vila do Corvo\n");
                  System.out.println("Aperte enter para seguir\n"); 
                  try{System.in.read();}
@@ -1251,18 +1447,12 @@ break;
                  System.out.println("Aperte enter para seguir\n"); 
                  try{System.in.read();}
                  catch(Exception e){}
+
+                 questaoUm(walk);
+
                }
         
-       /*  ((pergunta sobre oque e a teoria de adm.))
-                 
-     Caso errar 
-     (aparecer uma mensagem falando que está errada e dá uma dica)
-                 
-     Caso errar 3 vezes 
-     (aparecer isso; você não soube responder, fico de saco cheio de ouvir sobre isso e decide ir embora, fim de jogo, voltar ao menu)
-                 
-     Caso acertar
-     Continua a historia*/
+       
         
         static void casa1(int walk){
           System.out.println("Jasquim – Isso mesmo, até que um selvagem como você e bem esperto.");
@@ -1442,6 +1632,8 @@ break;
           System.out.println("Aperte enter para seguir\n"); 
           try{System.in.read();}
           catch(Exception e){}
+
+           // chamar função de combate
       }
         
         // Sistema de combate
@@ -1508,17 +1700,10 @@ break;
           System.out.println("Aperte enter para seguir\n"); 
           try{System.in.read();}
           catch(Exception e){}
+
+          questaoDoisCasa(walk);
       }
-        //((pergunta sobre currículo))
-//Das 4 informações e o jogador deve escolher a opção verdadeira exemplo
-//Nu currículo deve ter nome, cidade, objetivo, trabalhos anteriores. Isso seria verdade
-//Agora falso ex; nome, sexo, nome do pai, comida preferida ....
-//
-//Caso errar 
-//(aparecer uma mensagem falando que está errada e dá uma dica)
-//Caso errar 3 vezes 
-//(aparecer isso; você não soube responder, fico de saco cheio de ouvir sobre isso e decide ir embora fim de jogo, voltar ao menu)
-//Caso acertar
+ 
         static void casa3(int walk){ 
          
          System.out.println("Jasquim – Isso mesmo, mas acho que vou escolher a Cary, ela é mais bonita.\n");
@@ -1691,6 +1876,8 @@ break;
          System.out.println("Aperte enter para seguir\n"); 
          try{System.in.read();}
          catch(Exception e){}
+
+ // chamar função de combate
          
      }
         
@@ -1758,17 +1945,12 @@ break;
          System.out.println("Aperte enter para seguir\n"); 
          try{System.in.read();}
          catch(Exception e){}
+
+         questaoTresCasa(walk);
           
       }
         
-        //(((PERGUNTA SOBRE QUAL ADM ESTÁ SE REFERINDO A CARTA)))
-//A CARTA SE REFERE A ADM CLASSICA  E CIENTIFICA 
-//Caso errar 
-//(aparecer uma mensagem falando que está errada e dá uma dica)
-//Caso errar 3 vezes 
-//(aparecer isso; você não soube responder, fico de saco cheio de ouvir sobre isso e decide ir embora fim de jogo, voltar ao menu)
-//Caso acertar
-//Continua a histora 
+
         
         static void casa5(int walk){ 
    
@@ -1962,6 +2144,8 @@ break;
          System.out.println("Aperte enter para seguir\n"); 
          try{System.in.read();}
          catch(Exception e){}
+
+         // chamar função de combate
         }
         
         //Sistema de combate
