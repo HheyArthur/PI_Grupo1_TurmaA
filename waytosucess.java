@@ -6,7 +6,7 @@ import java.util.Random;
 
 
 
-public class App {
+public class waytosucess {
 
    public static Random aleatorio2 = new Random();
  public static  int d0010 = aleatorio2.nextInt(11);
