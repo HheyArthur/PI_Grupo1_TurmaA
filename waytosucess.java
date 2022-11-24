@@ -1,8 +1,4 @@
-//import java.util.ArrayList;
-//import java.util.Collections;
-//import java.util.Scanner;
-//import java.util.Random;
- package com.mycompany.jogorpg;
+package com.mycompany.jogorpg;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,7 +10,7 @@ public class waytosucess {
    public static Random aleatorio2 = new Random();
  public static  int d0010 = aleatorio2.nextInt(11);
 
-   public static Random aleatorio1 = new Random();
+   public static Random aleatorio1 = new Random();          // Funcao de sorte para história da casa
  public static  int d010 = aleatorio1.nextInt(11);
 
    public static Random aleatorio = new Random();
@@ -50,7 +46,7 @@ public static int menu(){  //função que ira da opções ao jogador
       return opcaomenu;
     }
 
-public static void creditos (int opcaomenu) { 
+public static void creditos (int opcaomenu) {   // os desenvolvedores
       System.out.println(" Arthur Felipe Roberto Guimarães ");
       System.out.println(" Denise de Souza Almeida");
       System.out.println(" Deivid Souza Silva");
@@ -58,7 +54,7 @@ public static void creditos (int opcaomenu) {
          
     }
      
-public static int sinopse (int opcaomenu) {
+public static int sinopse (int opcaomenu) {  
   System.out.println("Sinopse: \n"
   + "  Duas história. A taberna e a casa, na taberna você será um jovem que por causa da linha do\n"
   + "destino encontra um bom homem em sua taberna que irá ajudar em seu sonho empreendedor \n"
@@ -82,7 +78,7 @@ public static void sair (int opcaomenu) {
 
 }
 
-public static void caminhos (int opcaomenu) {
+public static void caminhos (int opcaomenu) {  // menu secundario
   int walk;
 
   do{
@@ -102,7 +98,7 @@ public static void caminhos (int opcaomenu) {
 validacoes(walk); // puxando a pergunta para fazer a validações
 }
 
-public static void questaoUm(int walk) {
+public static void questaoUm(int walk) { // questão "global"
 
            
         
@@ -149,7 +145,7 @@ do {
 
 
 
-public static void questaoDois (int walk) {
+public static void questaoDois (int walk) { // questão da taberna
    Scanner entrada = new Scanner(System.in);
    boolean acertou02 = false;  
    String pergunta02;
@@ -242,7 +238,7 @@ public static void questaoDois (int walk) {
 
 
 
-public static void questaoTres(int walk) {
+public static void questaoTres(int walk) { // questão da taberna
    Scanner entrada = new Scanner(System.in); 
    boolean acertou03 = false; 
       String pergunta03;
@@ -332,7 +328,7 @@ public static void questaoTres(int walk) {
 
 
   
-public static int questaoQuatro(int walk) {
+public static int questaoQuatro(int walk) { // questão da taberna
    Scanner entrada = new Scanner(System.in);
      String pergunta04tb;
      int resp04tb;
@@ -375,7 +371,7 @@ public static int questaoQuatro(int walk) {
 
     
  
-public static int questaoCinco(int walk) {
+public static int questaoCinco(int walk) { // questão da taberna
    Scanner entrada = new Scanner(System.in);
      String pergunta05;
    int resp05tb;
@@ -456,7 +452,7 @@ public static int questaoCinco(int walk) {
        return resp05tb;
     }
 
-    public static int questaoSeis(int walk) {
+    public static int questaoSeis(int walk) { // questão da taberna
       Scanner entrada = new Scanner(System.in);
          String pergunta06;
          int resp06tb;
@@ -517,7 +513,7 @@ contaberna++;
 
    
 
-   public static int questaoSete(int walk) {
+   public static int questaoSete(int walk) { // questão da taberna
    Scanner entrada = new Scanner(System.in);
          String pergunta07;
          int resp07tb;
@@ -595,7 +591,7 @@ contaberna++;
          
 
 
-         public static void questaoDoisCasa (int walk) {
+         public static void questaoDoisCasa (int walk) { 
             Scanner entrada = new Scanner(System.in);
             boolean acertou02 = false;
             String pergunta02;
@@ -680,7 +676,7 @@ contaberna++;
 default:
             System.out.println("Opção Inválida");
       } if (tentativa == 3) {
-         gameover2(walk);
+         gameover2(walk);  // chamando a função final do jogo
       }
        } while (!acertou02 && tentativa <= 2);
       }
@@ -780,12 +776,12 @@ default:
 
    
 
-public static void gameover (int walk) {
+public static void gameover (int walk) { // funcao com o final do jogo para a taberna
    System.out.println("\n" + nomejogador + " Infelizmente não foi dessa vez meu nobre tente novamente. \n");
    caminhos(walk);
 }
 
-public static void gameover2 (int walk) {
+public static void gameover2 (int walk) { // funcao com o final do jogo para a casa caso ele nao responda as perguntas corretas
    System.out.println("\n Você erra as perguntas, fica de saco cheio de ouvir sobre esse assuntos você deixa esse contrato de lado e  desiste de terminar essa missão. \n");
    caminhos(walk);
 }
@@ -793,7 +789,7 @@ public static void gameover2 (int walk) {
 
 
 
-public static void gameover3 (int walk) {
+public static void gameover3 (int walk) { // funcao final do jogo caso ele morra pro fantasma
    System.out.println("\n Você sofreu muito dano pelo fantasma, sem força você larga a espada no chão e cai sobre os pés do Jasquim, infelizmente esse é o seu infeliz fim. Fim de jogo. \n");
    caminhos(walk);
 }
@@ -802,7 +798,7 @@ public static void gameover3 (int walk) {
 
 
 
- public static void validacoes (int walk) {
+ public static void validacoes (int walk) { // validação do menu secundario
    if (walk == 1){
    taberna0(walk);
    taberna1(walk, nomejogador);
@@ -844,7 +840,7 @@ public static void gameover3 (int walk) {
 
 
 
-     public static void pedirnome() {   
+     public static void pedirnome() {   // registrar nome na variavel global
 
 
          System.out.println("Informe seu nome ");
@@ -857,7 +853,7 @@ public static void gameover3 (int walk) {
 
      
              
-    static void controle (int opcaomenu ,int walk) { // função de controle q irá chama todas as coisas.
+    static void controle (int opcaomenu ,int walk) { // que irá chama as demais funções.
       switch (opcaomenu) {
         case 1:
         caminhos(walk);
@@ -1745,22 +1741,16 @@ break;
           try{System.in.read();}
           catch(Exception e){}
           
-          System.out.println("Para defender do ataque jogue  o dado, se o valor for maior ou 5 você defende caso o contrário você sofre dano");
+          System.out.println("Para defender do ataque jogue  o dado, se o valor for maior ou 3 você defende caso o contrário você sofre dano");
           System.out.println("Jogue o dado ");
           try{System.in.read();}
           catch(Exception e){}
           
           System.out.println(d10);
-           // chamar função de combate
-      }
+ // chamando a variavel que  o jogador ira contar com a sorte
+}
         
-        // Sistema de combate
-//O jogador irá jogar um d10(dado de 10 lados) caso o valor for maior que 5 ele defende e contra-ataca
-//Caso o valor for menor que 5 ele toma 5 de dano, 
-//Ele tem que contra-atacar duas vezes, ou seja, tirar duas vezes no dado um número maior que 5
-//Caso ele morra
-//Você sofreu muito dano pelo fantasma, sem força você larga a espada no chão e cai sobre os pés do Jasquim, infelizmente esse é o seu infeliz fim. Fim de jogo.
-//Caso ele contra-ataca 2 vezes segue a história.
+
         
         static void casa2(int walk){
           
@@ -1996,24 +1986,18 @@ break;
          catch(Exception e){}
          
          
-          System.out.println("Para defender do ataque jogue  o dado, se o valor for maior ou 5 você defende caso o contrário você sofre dano");
+          System.out.println("Para defender do ataque jogue  o dado, se o valor for maior ou 4 você defende caso o contrário você sofre dano");
           System.out.println("Jogue o dado ");
           try{System.in.read();}
           catch(Exception e){}
          
          
 System.out.println(d010);
- // chamar função de combate
+ // chamando a variavel que  o jogador ira contar com a sorte
          
      }
         
-        //     Sistema de combate
-//O jogador irá jogar um d10(dado de 10 lados) caso o valor for maior que 5 ele defende e contra-ataca
-//Caso o valor for menor que 5 ele toma 5 de dano, 
-//Ele tem que contra-atacar duas vezes, ou seja, tirar duas vezes no dado um número maior que 5
-//Caso ele morra
-//Você sofreu muito dano pelo fantasma, sem força você larga a espada no chão e cai sobre os pés do Jasquim, infelizmente esse é o seu infeliz fim. Fim de jogo.
-//Caso ele contra-ataca 2 vezes segue a história.
+  
         
      static void casa4(int walk){ 
           
@@ -2278,17 +2262,10 @@ System.out.println(d010);
           catch(Exception e){}
 
          System.out.println(d0010);
-         // chamar função de combate
-        }
+ // chamando a variavel que  o jogador ira contar com a sorte
+}
         
-        //Sistema de combate
-//O jogador irá jogar um d10(dado de 10 lados) caso o valor for maior que 5 ele defende e contra-ataca
-//Caso o valor for menor que 5 ele toma 5 de dano, 
-//Ele tem que contra-atacar duas vezes, ou seja, tirar duas vezes no dado um número maior que 5
-//Caso ele morra
-//Você sofreu muito dano pelo fantasma, sem força você larga a espada no chão e cai sobre os pés do Jasquim, infelizmente esse é o seu infeliz fim. Fim de jogo.
-//Caso ele contra-ataca 2 vezes segue a história.
-//Finalmente o combate acaba, você corre em direção do corpo e o incinera 
+       
         
         static void casa6(int walk) { 
          System.out.println("Finalmente o combate acaba, você corre em direção do corpo e o incinera \n");
@@ -2372,8 +2349,8 @@ System.out.println(d010);
         
     
    public static void main(String[] args) {
-    int opcaomenu = menu();  
-    controle (opcaomenu, opcaomenu);
+    int opcaomenu = menu();  // iniciando com a função menu
+    controle (opcaomenu, opcaomenu); // chamando a função controle.
    }
   }
 
